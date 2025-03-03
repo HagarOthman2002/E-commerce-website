@@ -1,0 +1,128 @@
+:root {
+  --gray: #f0f0f0;
+}
+/*Global rules*/
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* Start Global Rules */
+
+body {
+  font-family: "Jost", serif;
+}
+
+header .logo {
+  line-height: 1;
+}
+
+.footer {
+  background-color: black;
+}
+.page {
+  background: url("/images/Main-Background.PNG") no-repeat top center;
+  background-size: cover;
+  min-height: 100vh;
+  position: relative;
+}
+@media (max-width: 991px) {
+  .page {
+    background: #f7f7f7;
+  }
+}
+
+header input[type="text"] {
+  background-color: var(--gray);
+  background-image: url("../images/Vector\ \(2\).png");
+  background-position: 10px 10px;
+  background-repeat: no-repeat;
+  padding: 12px 20px 12px 40px;
+}
+.page a {
+  background-color: black;
+}
+.page .big {
+  right: 8%;
+  top: 5%;
+}
+.page .small {
+  right: 45%;
+  top: 40%;
+}
+@media (min-width: 992px) {
+  .page .content p {
+    width: 50%;
+  }
+}
+.dress-style {
+  background: var(--gray);
+}
+.newArrivals img {
+  width: 250;
+  height: 250;
+}
+
+.slick-slide {
+  opacity: 0.5;
+  transition: opacity 0.3s ease;
+  transform: scale(1) !important;
+}
+
+.slick-active {
+  opacity: 1;
+}
+header .icons {
+  display: none;
+}
+
+.login-btn,
+.icons-container {
+  transition: opacity 0.3s ease;
+}
+
+.btn-logout {
+  padding: 0.5rem 1rem;
+  font-size: 0.9rem;
+}
+
+.card {
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.subscribe input[type="text"] {
+  background-color: var(--gray);
+  background-image: url("../images/Frame.png");
+  background-position: 10px 10px;
+  background-repeat: no-repeat;
+  padding: 12px 30px 12px 40px;
+  width: 500px;
+}
+.subscribe {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 90%;
+  width: 80%;
+}
+
+.new-arrivals img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 16px;
+}
+.user-dropdown:hover .user-menu {
+  display: block !important;
+  width: 200px;
+  z-index: 2;
+}
+
+/* Prevent overflow */
+.mainSlider {
+  overflow: hidden;
+}
+
+.slick-list {
+  overflow: hidden;
+}

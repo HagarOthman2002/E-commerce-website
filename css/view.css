@@ -1,0 +1,10 @@
+.review-tab::after {
+    content: "";
+    position: absolute;
+    bottom: -25px; 
+    left: -120px;
+    width: 300%;
+    height: 3px; 
+    background-color: black; 
+  }
+  

@@ -1,0 +1,49 @@
+:root {
+  --fields-color: #f7f7f7;
+}
+/*Global rules*/
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* Start Global Rules */
+
+body {
+  min-height: 100vh;
+  font-family: "Jost", serif;
+}
+@media (min-width: 992px) {
+  body {
+    overflow: hidden;
+  }
+}
+
+
+.backGround {
+  background-image: url("../images/Rectangle 3463273.png");
+  background-size: cover;
+  background-position: center;
+  width: 120%;
+  height: 100vh;
+}
+input {
+  border: 2px solid black; 
+  outline: none; 
+  transition: border-color 0.3s ease; 
+}
+
+
+form input{
+ 
+
+  height: 50px;
+}
+.error-message {
+  color: red;
+  font-size: 0.875em;
+  margin-top: 0.25em;
+}
+#cartIcon, #userIcon {
+  display: none;
+}

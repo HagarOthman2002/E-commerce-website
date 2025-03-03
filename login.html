@@ -1,0 +1,67 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>form</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <!--font awesome-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div
+      class="page d-flex flex-column flex-lg-row justify-content-center align-items-center text-center text-lg-start"
+    >
+      <div class="backGround position-relative d-sm-none d-lg-flex">
+        <img
+          src="../images/Group 56.png"
+          class="position-absolute m-4"
+          alt="Logo"
+        />
+      </div>
+
+      <form
+        id="contactForm"
+        action="#"
+        method="post"
+        class="container d-flex flex-column p-5 m-sm-5"
+      >
+        <div class="welcome">
+          <h1>Welcome 👋</h1>
+          <p class="text-muted">Please login here</p>
+        </div>
+        <div class="name d-flex flex-column py-2">
+          <label for="name" class="pb-2">User Name</label>
+          <input
+            type="text"
+            id="name"
+            name="name"
+            class="form-control rounded-5 p-2"
+          />
+          <div id="nameError" class="error-message"></div>
+        </div>
+
+        <div class="password d-flex flex-column py-2">
+          <label for="password" class="pb-2">password</label>
+          <input
+            type="password"
+            id="password"
+            name="password"
+            class="form-control rounded-5 p-3"
+          /><!--border border-dark -->
+          <div id="passwordError" class="error-message"></div>
+        </div>
+
+        <button type="submit" class="text-white p-3 mt-5 btn btn-dark">
+          login
+        </button>
+      </form>
+    </div>
+    <script src="js/index.js"></script>
+  </body>
+</html>

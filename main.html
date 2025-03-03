@@ -1,0 +1,565 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SHOP.CO</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/slick.css" />
+    <link rel="stylesheet" href="css/slick-theme.css" />
+    <link rel="stylesheet" href="css/main.css" />
+    <!--font awesome-->
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header class="position-relative">
+      <h6 class="text-white bg-dark p-3 text-center">
+        Sign up and get 20% off your first order.
+        <a href="#" class="text-white fw-light">Sign Up Now</a>
+      </h6>
+
+      <div
+        class="d-flex align-items-center justify-content-between p-3 border-bottom pb-4 px-4"
+      >
+        <h1 class="logo fw-bolder fs-4">SHOP.CO</h1>
+
+        <ul class="nav gap-2 d-flex flex-nowrap text-nowrap">
+          <li class="nav-item">
+            <a href="#" class="nav-link text-dark p-0 p-sm-2"
+              >Shop <i class="fa-solid fa-angle-down"></i
+            ></a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link p-0 p-sm-2 text-dark">On Sale</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link p-0 p-sm-2 text-dark">New Arrivals</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link p-0 p-sm-2 text-dark">Brands</a>
+          </li>
+        </ul>
+
+        <input
+          type="text"
+          class="form-control rounded-pill border-0 shadow-sm w-25 d-none d-lg-flex align-items-center"
+          name="Search"
+          placeholder="Search for products..."
+        />
+
+        <a
+          href="index.html"
+          class="btn rounded-pill bg-dark text-white px-sm-3 px-lg-5 py-sm-2"
+          id="loginButton"
+          >Login</a
+        >
+
+        <div class="icons d-flex gap-1 d-none d-lg-flex">
+          <ul class="list-unstyled d-flex m-0">
+            <li>
+              <a href="#" class="text-dark"
+                ><i
+                  class="fa-solid fa-cart-shopping fs-5 px-2"
+                  id="cartIcon"
+                ></i
+              ></a>
+            </li>
+            <li class="position-relative user-dropdown">
+              <a href="#" class="text-dark"
+                ><i class="fa-solid fa-circle-user fs-5 px-2" id="userIcon"></i
+              ></a>
+              <div
+                class="user-menu position-absolute top-100 end-0 bg-white shadow p-3 rounded d-none"
+              >
+                <a href="login.html" class="btn btn-danger w-100">Log Out</a>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </header>
+
+    <div class="page">
+      <img
+        src="images/Vector (1).png"
+        alt=""
+        class="small position-absolute d-none d-lg-flex"
+      />
+      <img
+        src="images/Vector.png"
+        alt=""
+        class="big position-absolute d-none d-lg-flex"
+      />
+
+      <div
+        class="content p-5 text-lg-start d-lg-block d-flex flex-column justify-content-center align-items-center"
+      >
+        <p class="main-text fw-bolder display-1 lh-1">
+          FIND CLOTHES THAT MATCHES YOUR STYLE
+        </p>
+        <p class="w-lg-50 text-secondary">
+          Browse through our diverse range of meticulously crafted garments,
+          designed to bring out your individuality and cater to your sense of
+          style.
+        </p>
+        <a href="shop.html" class="btn rounded-pill text-white p-2 px-5"
+          >Shop Now</a
+        >
+      </div>
+
+      <div
+        class="statistics d-flex align-items-center gap-4 justify-content-lg-start justify-content-center"
+      >
+        <div class="ps-4 border-start border-2">
+          <p class="display-6">200+</p>
+          <span>International Brands</span>
+        </div>
+        <div class="ps-4 border-start border-2">
+          <p class="display-6">2,000+</p>
+          <span>High-Quality Products</span>
+        </div>
+        <div class="ps-4 border-start border-2">
+          <p class="display-6">30,000+</p>
+          <span>Happy Customers</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer p-4 d-none d-lg-block">
+      <div
+        class="category-slider d-flex align-items-center overflow-hidden"
+      ></div>
+    </div>
+
+    <div class="new-arrivals container py-5">
+      <h1 class="newArrivals text-center p-3 fw-bolder">NEW ARRIVALS</h1>
+      <div class="row g-4" id="productsContainer"></div>
+      <!-- Dynamic Content Here -->
+      <div class="d-flex justify-content-center mt-4">
+        <a
+          href="shop.html"
+          class="bg-white rounded-pill p-2 px-5 border border-secondary text-decoration-none text-dark"
+        >
+          View ALL
+        </a>
+      </div>
+    </div>
+
+    <div class="new-arrivals container py-5">
+      <h1 class="text-center p-3 fw-bolder">Top Selling</h1>
+      <div class="row g-4" id="topSellingContainer"></div>
+      <!-- Dynamic Content Here -->
+      <div class="d-flex justify-content-center mt-4">
+        <a
+          href="view.html"
+          class="bg-white rounded-pill p-2 px-5 border border-secondary text-decoration-none text-dark"
+        >
+          View ALL
+        </a>
+      </div>
+    </div>
+
+    <div class="dress-style container rounded-3 p-5">
+      <h1 class="text-center fw-bold mb-4">BROWSE BY DRESS STYLE</h1>
+      <div class="row g-4">
+        <!-- Casual (25%) -->
+        <div class="col-6 col-lg-3">
+          <div
+            class="position-relative bg-light rounded-3 overflow-hidden h-100"
+          >
+            <img
+              src="images/image 11.png"
+              alt="Casual"
+              class="img-fluid h-100 object-fit-cover w-100"
+            />
+            <h4
+              class="position-absolute top-50 start-50 translate-middle fw-bold"
+            >
+              Casual
+            </h4>
+          </div>
+        </div>
+
+        <!-- Formal (75%) -->
+        <div class="col-6 col-lg-9">
+          <div
+            class="position-relative bg-light rounded-3 overflow-hidden h-100"
+          >
+            <img
+              src="images/image 13.png"
+              alt="Formal"
+              class="img-fluid h-100 object-fit-cover w-100"
+            />
+            <h4
+              class="position-absolute top-50 start-50 translate-middle fw-bold"
+            >
+              Formal
+            </h4>
+          </div>
+        </div>
+
+        <!-- Party (75%) -->
+        <div class="col-6 col-lg-9">
+          <div
+            class="position-relative bg-light rounded-3 overflow-hidden h-100"
+          >
+            <img
+              src="images/image 12.png"
+              alt="Party"
+              class="img-fluid h-100 object-fit-cove w-100"
+            />
+            <h4
+              class="position-absolute top-50 start-50 translate-middle fw-bold"
+            >
+              Party
+            </h4>
+          </div>
+        </div>
+
+        <!-- Gym (25%) -->
+        <div class="col-6 col-lg-3">
+          <div
+            class="position-relative bg-light rounded-3 overflow-hidden h-100"
+          >
+            <img
+              src="images/image 14.png"
+              alt="Gym"
+              class="img-fluid h-100 object-fit-cover w-100"
+            />
+            <h4
+              class="position-absolute top-50 start-50 translate-middle fw-bold"
+            >
+              Gym
+            </h4>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--slider-->
+    <div
+      class="container d-flex align-items-center justify-content-between py-5 fw-bold"
+    >
+      <h1>OUR HAPPY CUSTOMERS</h1>
+      <div class="arrows">
+        <i class="fa-solid fa-arrow-left fw-bold"></i>
+        <i class="fa-solid fa-arrow-right"></i>
+      </div>
+    </div>
+    <div class="mainSlider">
+      <div class="slickSlider">
+        <div class="box p-4">
+          <div class="card rounded-3 p-5">
+            <div class="score text-warning">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-regular fa-star"></i>
+              <span class="text-dark">4.5/5</span>
+            </div>
+            <div class="name">
+              <h3>Sarah M.</h3>
+              <p>
+                "I'm blown away by the quality and style of the clothes I
+                received from Shop.co. From casual wear to elegant dresses,
+                every piece I've bought has exceeded my expectations.”
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="box p-4">
+          <div class="card rounded-3 p-5">
+            <div class="score text-warning">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-regular fa-star"></i>
+              <span class="text-dark">4.5/5</span>
+            </div>
+            <div class="name">
+              <h3>Alex K.</h3>
+              <p>
+                "I'm blown away by the quality and style of the clothes I
+                received from Shop.co. From casual wear to elegant dresses,
+                every piece I've bought has exceeded my expectations.”
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="box p-4">
+          <div class="card rounded-3 p-5">
+            <div class="score text-warning">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-regular fa-star"></i>
+              <span class="text-dark">4.5/5</span>
+            </div>
+            <div class="name">
+              <h3>James L.</h3>
+              <p>
+                "I'm blown away by the quality and style of the clothes I
+                received from Shop.co. From casual wear to elegant dresses,
+                every piece I've bought has exceeded my expectations.”
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="box p-4">
+          <div class="card rounded-3 p-5">
+            <div class="score text-warning">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-regular fa-star"></i>
+              <span class="text-dark">4.5/5</span>
+            </div>
+            <div class="name">
+              <h3>Sarah M.</h3>
+              <p>
+                "I'm blown away by the quality and style of the clothes I
+                received from Shop.co. From casual wear to elegant dresses,
+                every piece I've bought has exceeded my expectations.”
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="box p-4">
+          <div class="card rounded-3 p-5">
+            <div class="score text-warning">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-regular fa-star"></i>
+              <span class="text-dark">4.5/5</span>
+            </div>
+            <div class="name">
+              <h3>Sarah M.</h3>
+              <p>
+                "I'm blown away by the quality and style of the clothes I
+                received from Shop.co. From casual wear to elegant dresses,
+                every piece I've bought has exceeded my expectations.”
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="box p-4">
+          <div class="card rounded-3 p-5">
+            <div class="score text-warning">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-regular fa-star"></i>
+              <span class="text-dark">4.5/5</span>
+            </div>
+            <div class="name">
+              <h3>Sarah M.</h3>
+              <p>
+                "I'm blown away by the quality and style of the clothes I
+                received from Shop.co. From casual wear to elegant dresses,
+                every piece I've bought has exceeded my expectations.”
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="box p-4">
+          <div class="card rounded-3 p-5">
+            <div class="score text-warning">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-regular fa-star"></i>
+              <span class="text-dark">4.5/5</span>
+            </div>
+            <div class="name">
+              <h3>Sarah M.</h3>
+              <p>
+                "I'm blown away by the quality and style of the clothes I
+                received from Shop.co. From casual wear to elegant dresses,
+                every piece I've bought has exceeded my expectations.”
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer class="bg-light position-relative pt-5 mt-5">
+      <div class="container border-bottom">
+        <div
+          class="subscribe bg-dark p-lg-4 p-2 rounded-3 d-lg-flex d-none align-items-center position-absolute gap-3"
+        >
+          <p class="text-white fw-bolder fs-1 text-sm-center text-lg-left">
+            STAY UPTO DATE ABOUT<br />
+            OUR LATEST OFFERS
+          </p>
+          <form action="" class="">
+            <input
+              type="text"
+              class="form-control rounded-pill border-0 shadow-sm mb-3"
+              name="Email"
+              placeholder="Enter Your Emial..."
+            />
+            <button
+              type="submit"
+              class="form-control rounded-pill border-0 shadow-sm"
+            >
+              Subscribe to Newsletter
+            </button>
+          </form>
+        </div>
+
+        <div class="row p-lg-5 d-flex justify-content-between">
+          <div class="col-6 col-md-4 col-lg-3">
+            <h1 class="logo fw-bolder fs-4">SHOP.CO</h1>
+            <p>
+              We have clothes that suits your style and which you’re proud to
+              wear. From women to men.
+            </p>
+            <div class="social-icons">
+              <i class="fa-brands fa-twitter"></i>
+              <i class="fa-brands fa-facebook"></i>
+              <i class="fa-brands fa-instagram"></i>
+              <i class="fa-brands fa-github"></i>
+            </div>
+          </div>
+          <div class="col-6 col-md-4 col-lg-2">
+            <h1 class="fs-4">Company</h1>
+            <ul class="list-unstyled">
+              <li>
+                <a href="" class="text-decoration-none text-secondary">About</a>
+              </li>
+              <li>
+                <a href="" class="text-decoration-none text-secondary"
+                  >Features</a
+                >
+              </li>
+              <li>
+                <a href="" class="text-decoration-none text-secondary">About</a>
+              </li>
+              <li>
+                <a href="" class="text-decoration-none text-secondary">About</a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="col-6 col-md-4 col-lg-2">
+            <h1 class="fs-4">Help</h1>
+            <ul class="list-unstyled">
+              <li>
+                <a href="" class="text-decoration-none text-secondary"
+                  >Customer Support</a
+                >
+              </li>
+              <li>
+                <a href="" class="text-decoration-none text-secondary"
+                  >Delivery Details</a
+                >
+              </li>
+              <li>
+                <a href="" class="text-decoration-none text-secondary"
+                  >Terms & Conditions</a
+                >
+              </li>
+              <li>
+                <a href="" class="text-decoration-none text-secondary"
+                  >Privacy Policy</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <div class="col-6 col-md-4 col-lg-2">
+            <h1 class="fs-4">FAQ</h1>
+            <ul class="list-unstyled">
+              <li>
+                <a href="" class="text-decoration-none text-secondary"
+                  >Account</a
+                >
+              </li>
+              <li>
+                <a href="" class="text-decoration-none text-secondary"
+                  >Manage Deliveries</a
+                >
+              </li>
+              <li>
+                <a href="" class="text-decoration-none text-secondary"
+                  >Orders</a
+                >
+              </li>
+              <li>
+                <a href="" class="text-decoration-none text-secondary"
+                  >Payments</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <div class="col-6 col-md-4 col-lg-2">
+            <h1 class="fs-4">Resources</h1>
+            <ul class="list-unstyled">
+              <li>
+                <a href="" class="text-decoration-none text-secondary"
+                  >Free eBooks</a
+                >
+              </li>
+              <li>
+                <a href="" class="text-decoration-none text-secondary"
+                  >Development Tutorial</a
+                >
+              </li>
+              <li>
+                <a href="" class="text-decoration-none text-secondary"
+                  >How to - Blog</a
+                >
+              </li>
+              <li>
+                <a href="" class="text-decoration-none text-secondary"
+                  >Youtube Playlist</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="container d-flex justify-content-between p-4 text-nowrap">
+        <span class="fw-light fs-6">© 2000-2021, All rights reserved</span>
+        <div class="images">
+          <img src="images/visa.png" alt="" />
+          <img src="images/Mastercard.png" alt="" />
+          <img src="images/pay.png" alt="" />
+          <img src="images/pay.png" alt="" />
+          <img src="images/google.png" alt="" />
+        </div>
+      </div>
+    </footer>
+  </body>
+  <!-- Latest jQuery 3.x -->
+  <script
+    src="https://code.jquery.com/jquery-3.7.1.min.js"
+    integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+    crossorigin="anonymous"
+  ></script>
+  <script src="js/loginBTN.js"></script>
+  <script src="js/comments.js"></script>
+  <script src="js/products.js"></script>
+  <script src="js/topSelling.js"></script>
+  <script src="js/categoryBars.js"></script>
+  <script src="js/slick.min.js"></script>
+</html>

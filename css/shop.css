@@ -1,0 +1,104 @@
+/*filter*/
+.filter {
+  border: 1px solid gainsboro;
+}
+
+.price {
+  width: 100%;
+}
+
+/* Slider Container */
+.slider {
+  position: relative;
+  width: 100%;
+  height: 6px;
+  background: #ddd;
+  border-radius: 5px;
+  margin-top: 10px;
+  overflow: hidden;
+}
+
+.progress {
+  position: absolute;
+  height: 100%;
+  left: 25%;
+  right: 25%;
+  background: #007bff;
+  border-radius: 5px;
+}
+
+.range-input {
+  position: relative;
+  width: 100%;
+  height: 5px;
+  margin-top: -5px;
+}
+
+.range-input input {
+  position: absolute;
+  width: 100%;
+  height: 5px;
+  top: 0;
+  background: transparent;
+  pointer-events: none;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+  height: 17px;
+  width: 17px;
+  border-radius: 50%;
+  background: #17a2b8;
+  pointer-events: auto;
+  -webkit-appearance: none;
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.05);
+  position: relative;
+  z-index: 2;
+}
+
+input[type="range"]::-moz-range-thumb {
+  height: 17px;
+  width: 17px;
+  border: none;
+  border-radius: 50%;
+  background: #17a2b8;
+  pointer-events: auto;
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.05);
+  position: relative;
+  z-index: 2;
+}
+.price {
+  border-bottom: 1px solid #ddd !important;
+}
+
+.circle-color {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  padding: 0;
+  cursor: pointer;
+}
+
+.shop img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 16px;
+}
+.pagination .page-item .page-link {
+  border: none;
+  padding: 10px 16px;
+  margin: 0 5px; 
+  color: black;
+  font-weight: bold;
+}
+
+.pagination .page-item.active .page-link {
+  background-color: black;
+  color: white;
+  border-color: black;
+}
+
+.pagination .page-item.disabled .page-link {
+  color: #ccc;
+  pointer-events: none;
+}
