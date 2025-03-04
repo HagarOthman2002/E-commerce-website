@@ -18,64 +18,48 @@
   </head>
   <body>
     <header class="position-relative">
+      <!-- Top Signup Banner -->
       <h6 class="text-white bg-dark p-3 text-center">
         Sign up and get 20% off your first order.
-        <a href="#" class="text-white fw-light">Sign Up Now</a>
+        <a href="#" class="text-white fw-light icon">Sign Up Now</a>
       </h6>
-
-      <div
-        class="d-flex align-items-center justify-content-between p-3 border-bottom pb-4 px-4"
-      >
+    
+      <!-- Main Navbar -->
+      <div class="d-flex align-items-center justify-content-between p-3 border-bottom pb-4 px-4">
         <h1 class="logo fw-bolder fs-4">SHOP.CO</h1>
-
+    
+        <!-- Navigation Menu -->
         <ul class="nav gap-2 d-flex flex-nowrap text-nowrap">
-          <li class="nav-item">
-            <a href="#" class="nav-link text-dark p-0 p-sm-2"
-              >Shop <i class="fa-solid fa-angle-down"></i
-            ></a>
+          <!-- Shop Dropdown (Static) -->
+          <li class="nav-item position-relative link-hover">
+            <a href="#" class="nav-link text-dark p-0 p-sm-2 ">Shop <i class="fa-solid fa-angle-down"></i></a>
+            <ul class="dropdown-menu bg-white shadow-sm rounded">
+              <li><a href="#" class="dropdown-item text-dark px-3 py-2 link-hover">Men's Clothing</a></li>
+              <li><a href="#" class="dropdown-item text-dark px-3 py-2 link-hover">Women's Clothing</a></li>
+              <li><a href="#" class="dropdown-item text-dark px-3 py-2 link-hover">Accessories</a></li>
+              <li><a href="#" class="dropdown-item text-dark px-3 py-2 link-hover">Shoes</a></li>
+              <li><a href="#" class="dropdown-item text-dark px-3 py-2 link-hover">Electronics</a></li>
+            </ul>
           </li>
-          <li class="nav-item">
-            <a href="#" class="nav-link p-0 p-sm-2 text-dark">On Sale</a>
-          </li>
-          <li class="nav-item">
-            <a href="#" class="nav-link p-0 p-sm-2 text-dark">New Arrivals</a>
-          </li>
-          <li class="nav-item">
-            <a href="#" class="nav-link p-0 p-sm-2 text-dark">Brands</a>
-          </li>
+          <li class="nav-item link-hover"><a href="#" class="nav-link p-0 p-sm-2 text-dark">On Sale</a></li>
+          <li class="nav-item link-hover"><a href="#" class="nav-link p-0 p-sm-2 text-dark">New Arrivals</a></li>
+          <li class="nav-item link-hover"><a href="#" class="nav-link p-0 p-sm-2 text-dark">Brands</a></li>
         </ul>
-
-        <input
-          type="text"
-          class="form-control rounded-pill border-0 shadow-sm w-25 d-none d-lg-flex align-items-center"
-          name="Search"
-          placeholder="Search for products..."
-        />
-
-        <a
-          href="index.html"
-          class="btn rounded-pill bg-dark text-white px-sm-3 px-lg-5 py-sm-2"
-          id="loginButton"
-          >Login</a
-        >
-
+    
+        <!-- Search Bar -->
+        <input type="text" class="form-control rounded-pill border-0 shadow-sm w-25 d-none d-lg-flex align-items-center"
+          name="Search" placeholder="Search for products..." />
+    
+        <!-- Login Button -->
+        <a href="index.html" class="btn rounded-pill bg-dark text-white px-sm-3 px-lg-5 py-sm-2" id="loginButton">Login</a>
+    
+        <!-- Icons (Cart & User) -->
         <div class="icons d-flex gap-1 d-none d-lg-flex">
           <ul class="list-unstyled d-flex m-0">
-            <li>
-              <a href="#" class="text-dark"
-                ><i
-                  class="fa-solid fa-cart-shopping fs-5 px-2"
-                  id="cartIcon"
-                ></i
-              ></a>
-            </li>
-            <li class="position-relative user-dropdown">
-              <a href="#" class="text-dark"
-                ><i class="fa-solid fa-circle-user fs-5 px-2" id="userIcon"></i
-              ></a>
-              <div
-                class="user-menu position-absolute top-100 end-0 bg-white shadow p-3 rounded d-none"
-              >
+            <li class="link-hover"><a href="#" class="text-dark"><i class="fa-solid fa-cart-shopping fs-5 px-2 icon" id="cartIcon"></i></a></li>
+            <li class="position-relative user-dropdown link-hover">
+              <a href="#" class="text-dark"><i class="fa-solid fa-circle-user fs-5 px-2 icon" id="userIcon"></i></a>
+              <div class="user-menu position-absolute top-100 end-0 bg-white shadow p-3 rounded d-none">
                 <a href="login.html" class="btn btn-danger w-100">Log Out</a>
               </div>
             </li>
@@ -83,6 +67,7 @@
         </div>
       </div>
     </header>
+    
 
     <div class="page">
       <img
@@ -107,7 +92,9 @@
           designed to bring out your individuality and cater to your sense of
           style.
         </p>
-        <a href="shop.html" class="btn rounded-pill text-white p-2 px-5"
+        <a
+          href="shop.html"
+          class="btn rounded-pill text-white p-2 px-5 shop-btn"
           >Shop Now</a
         >
       </div>
@@ -116,7 +103,7 @@
         class="statistics d-flex align-items-center gap-4 justify-content-lg-start justify-content-center"
       >
         <div class="ps-4 border-start border-2">
-          <p class="display-6">200+</p>
+          <p class="display-6 ">200+</p>
           <span>International Brands</span>
         </div>
         <div class="ps-4 border-start border-2">
@@ -143,7 +130,7 @@
       <div class="d-flex justify-content-center mt-4">
         <a
           href="shop.html"
-          class="bg-white rounded-pill p-2 px-5 border border-secondary text-decoration-none text-dark"
+          class="bg-white rounded-pill p-2 px-5 border border-secondary text-decoration-none text-dark view-all-btn"
         >
           View ALL
         </a>
@@ -157,7 +144,7 @@
       <div class="d-flex justify-content-center mt-4">
         <a
           href="view.html"
-          class="bg-white rounded-pill p-2 px-5 border border-secondary text-decoration-none text-dark"
+          class="bg-white rounded-pill p-2 px-5 border border-secondary text-decoration-none text-dark view-all-btn"
         >
           View ALL
         </a>
@@ -221,7 +208,6 @@
           </div>
         </div>
 
-        <!-- Gym (25%) -->
         <div class="col-6 col-lg-3">
           <div
             class="position-relative bg-light rounded-3 overflow-hidden h-100"
@@ -243,12 +229,12 @@
 
     <!--slider-->
     <div
-      class="container d-flex align-items-center justify-content-between py-5 fw-bold"
+      class="container d-flex align-items-center justify-content-between fw-bold p-3"
     >
       <h1>OUR HAPPY CUSTOMERS</h1>
       <div class="arrows">
-        <i class="fa-solid fa-arrow-left fw-bold"></i>
-        <i class="fa-solid fa-arrow-right"></i>
+        <i class="fa-solid fa-arrow-left fw-bold icon p-1 fa"  ></i>
+        <i class="fa-solid fa-arrow-right icon p-1 "></i>
       </div>
     </div>
     <div class="mainSlider">
@@ -400,7 +386,7 @@
       </div>
     </div>
 
-    <footer class="bg-light position-relative pt-5 mt-5">
+    <footer class="bg-light position-relative pt-5">
       <div class="container border-bottom">
         <div
           class="subscribe bg-dark p-lg-4 p-2 rounded-3 d-lg-flex d-none align-items-center position-absolute gap-3"
@@ -418,7 +404,7 @@
             />
             <button
               type="submit"
-              class="form-control rounded-pill border-0 shadow-sm"
+              class="form-control rounded-pill border-0 shadow-sm view-all-btn"
             >
               Subscribe to Newsletter
             </button>
@@ -433,27 +419,31 @@
               wear. From women to men.
             </p>
             <div class="social-icons">
-              <i class="fa-brands fa-twitter"></i>
-              <i class="fa-brands fa-facebook"></i>
-              <i class="fa-brands fa-instagram"></i>
-              <i class="fa-brands fa-github"></i>
+              <a href=""><i class="fa-brands fa-twitter text-dark icon link-hover"></i></a>
+              <a href=""
+                ><i class="fa-brands fa-facebook text-dark icon link-hover"></i
+              ></a>
+              <a href=""
+                ><i class="fa-brands fa-instagram text-dark icon link-hover"></i
+              ></a>
+              <a href=""><i class="fa-brands fa-github text-dark icon link-hover"></i></a>
             </div>
           </div>
           <div class="col-6 col-md-4 col-lg-2">
             <h1 class="fs-4">Company</h1>
             <ul class="list-unstyled lh-lg">
-              <li>
-                <a href="" class="text-decoration-none text-secondary">About</a>
+              <li class="link-hover">
+                <a href="" class="text-decoration-none text-secondary ">About</a>
               </li>
-              <li>
+              <li class="link-hover">
                 <a href="" class="text-decoration-none text-secondary"
                   >Features</a
                 >
-              </li>
-              <li>
+              </li >
+              <li class="link-hover">
                 <a href="" class="text-decoration-none text-secondary">About</a>
               </li>
-              <li>
+              <li class="link-hover">
                 <a href="" class="text-decoration-none text-secondary">About</a>
               </li>
             </ul>
@@ -462,22 +452,22 @@
           <div class="col-6 col-md-4 col-lg-2 lh-lg">
             <h1 class="fs-4">Help</h1>
             <ul class="list-unstyled">
-              <li>
+              <li class="link-hover">
                 <a href="" class="text-decoration-none text-secondary"
                   >Customer Support</a
                 >
               </li>
-              <li>
+              <li class="link-hover">
                 <a href="" class="text-decoration-none text-secondary"
                   >Delivery Details</a
                 >
               </li>
-              <li>
+              <li class="link-hover">
                 <a href="" class="text-decoration-none text-secondary"
                   >Terms & Conditions</a
                 >
               </li>
-              <li>
+              <li class="link-hover">
                 <a href="" class="text-decoration-none text-secondary"
                   >Privacy Policy</a
                 >
@@ -488,22 +478,22 @@
           <div class="col-6 col-md-4 col-lg-2 lh-lg">
             <h1 class="fs-4">FAQ</h1>
             <ul class="list-unstyled">
-              <li>
+              <li class="link-hover">
                 <a href="" class="text-decoration-none text-secondary"
                   >Account</a
                 >
               </li>
-              <li>
+              <li class="link-hover">
                 <a href="" class="text-decoration-none text-secondary"
                   >Manage Deliveries</a
                 >
               </li>
-              <li>
+              <li class="link-hover" >
                 <a href="" class="text-decoration-none text-secondary"
                   >Orders</a
                 >
               </li>
-              <li>
+              <li class="link-hover">
                 <a href="" class="text-decoration-none text-secondary"
                   >Payments</a
                 >
@@ -514,22 +504,22 @@
           <div class="col-6 col-md-4 col-lg-2 lh-lg">
             <h1 class="fs-4">Resources</h1>
             <ul class="list-unstyled">
-              <li>
+              <li class="link-hover">
                 <a href="" class="text-decoration-none text-secondary"
                   >Free eBooks</a
                 >
               </li>
-              <li>
+              <li class="link-hover">
                 <a href="" class="text-decoration-none text-secondary"
                   >Development Tutorial</a
                 >
               </li>
-              <li>
+              <li class="link-hover">
                 <a href="" class="text-decoration-none text-secondary"
                   >How to - Blog</a
                 >
               </li>
-              <li>
+              <li class="link-hover">
                 <a href="" class="text-decoration-none text-secondary"
                   >Youtube Playlist</a
                 >
@@ -541,14 +531,14 @@
       <div class="container d-flex justify-content-between p-4 text-nowrap">
         <span class="fw-light fs-6">© 2000-2021, All rights reserved</span>
         <div class="images">
-          <img src="images/visa.png" alt="" />
-          <img src="images/Mastercard.png" alt="" />
-          <img src="images/pay.png" alt="" />
-          <img src="images/pay.png" alt="" />
-          <img src="images/google.png" alt="" />
+          <img src="images/visa.png" alt=""  class="link-hover"> 
+          <img src="images/Mastercard.png" alt=""  class="link-hover">
+          <img src="images/pay.png" alt="" class="link-hover">
+          <img src="images/pay.png" alt="" class="link-hover">
+          <img src="images/google.png" alt="" class="link-hover">
         </div>
       </div>
-    </footer> 
+    </footer>
   </body>
   <!-- Latest jQuery 3.x -->
   <script

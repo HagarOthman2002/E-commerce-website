@@ -7,4 +7,30 @@
     height: 3px; 
     background-color: black; 
   }
+  .icon:hover {
+    color: blue !important;
+  }
+  .details:hover {
+    color: gray !important;
+    
+  }
+  .gray-btn:hover{
+    background-color: text-white !important;
+    background-color: black !important;
+  }
+  .reviws:hover{
+    background-color: gray !important;
+    color: white !important;
+    border: none !important;
+  }
+  .more-options{
+    margin-bottom: 10rem !important ;
+  }
+  .link-hover {
+    transition: color 0.3s ease, transform 0.2s ease;
+  }
   
+  .link-hover:hover {
+    color: #000; /* Adjust color */
+    transform: translateX(3px);
+  }

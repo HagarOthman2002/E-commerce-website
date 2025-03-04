@@ -47,3 +47,6 @@ form input{
 #cartIcon, #userIcon {
   display: none;
 }
+.icon:hover {
+  color: blue !important;
+}

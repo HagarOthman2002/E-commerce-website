@@ -62,11 +62,14 @@ header input[type="text"] {
   width: 250;
   height: 250;
 }
-
 .slick-slide {
+  transition: opacity 0.3s ease-in-out;
   opacity: 0.5;
-  transition: opacity 0.3s ease;
-  transform: scale(1) !important;
+  height: 65%;
+}
+
+.slick-center {
+  opacity: 1 !important;
 }
 
 .slick-active {
@@ -126,3 +129,57 @@ header .icons {
 .slick-list {
   overflow: hidden;
 }
+.icon:hover {
+  color: blue !important;
+}
+.shop-btn:hover {
+  background-color: gray;
+}
+.view-all-btn:hover {
+  background-color: gray !important;
+  color: white !important;
+  border: none !important;
+}
+/* Dropdown Styling */
+.dropdown-menu {
+  width: 200px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  z-index: 1000;
+  display: block;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(10px);
+  transition: opacity 0.3s ease, transform 0.3s ease;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background: white;
+  border-radius: 5px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.nav-item:hover .dropdown-menu {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+
+.dropdown-item {
+  display: block;
+  padding: 20px;
+  text-decoration: none;
+  transition: background 0.3s ease;
+}
+
+.link-hover {
+  transition: color 0.3s ease, transform 0.2s ease;
+}
+
+.link-hover:hover {
+  color: #000; /* Adjust color */
+  transform: translateX(3px);
+}
+
+

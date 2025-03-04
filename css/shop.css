@@ -102,3 +102,17 @@ input[type="range"]::-moz-range-thumb {
   color: #ccc;
   pointer-events: none;
 }
+.icon:hover {
+  color: blue !important;
+}
+footer{
+  margin-top: 15rem;
+}
+.link-hover {
+  transition: color 0.3s ease, transform 0.2s ease;
+}
+
+.link-hover:hover {
+  color: #000; /* Adjust color */
+  transform: translateX(3px);
+}
