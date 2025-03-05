@@ -17,7 +17,7 @@
     />
   </head>
   <body>
-    <header class="position-relative">
+     <header class="position-relative">
       <h6 class="text-white bg-dark p-3 text-center">
         Sign up and get 20% off your first order.
         <a href="#" class="text-white fw-light icon">Sign Up Now</a>
@@ -26,10 +26,9 @@
       <div
         class="d-flex align-items-center justify-content-between p-3 border-bottom pb-4 px-4"
       >
-        <!-- <h1 class="logo fw-bolder fs-4">SHOP.CO</h1> -->
         <a href="main.html"><img src="images\SHOP.CO.png" alt="" /></a>
 
-        <ul class="nav gap-2 d-flex flex-nowrap text-nowrap">
+        <ul class="nav gap-2 d-flex flex-nowrap text-nowrap d-none d-lg-flex">
           <li class="nav-item position-relative">
             <a href="#" class="nav-link text-dark p-0 p-sm-2 link-hover d-block"
               >Shop <i class="fa-solid fa-angle-down"></i
@@ -73,7 +72,6 @@
           </li>
         </ul>
 
-        <!-- Search Bar -->
         <input
           type="text"
           class="form-control rounded-pill border-0 shadow-sm w-25 d-none d-lg-flex align-items-center"
@@ -81,7 +79,6 @@
           placeholder="Search for products..."
         />
 
-        <!-- Login Button -->
         <a
           href="login.html"
           class="btn rounded-pill bg-dark text-white px-sm-3 px-lg-5 py-sm-2"
@@ -89,24 +86,40 @@
           >Login</a
         >
 
-        <!-- Icons (Cart & User) -->
-        <div class="icons d-flex gap-1 d-lg-flex" id="userInfo">
-          <ul class="list-unstyled d-flex m-0">
+        <div class="icons d-flex align-items-center gap-1" id="userInfo">
+          <div class="dropdown d-md-none">
+            <button
+              class="btn btn-dark dropdown-toggle"
+              type="button"
+              id="mobileMenu"
+              data-bs-toggle="dropdown"
+            >
+              Menu
+            </button>
+            <ul class="dropdown-menu" aria-labelledby="mobileMenu">
+              <li><a href="#" class="dropdown-item">Shop</a></li>
+              <li><a href="#" class="dropdown-item">On Sale</a></li>
+              <li><a href="#" class="dropdown-item">New Arrivals</a></li>
+              <li><a href="#" class="dropdown-item">Brands</a></li>
+            </ul>
+          </div>
+
+          <ul class="list-unstyled d-flex m-3">
             <li class="">
-              <a href="#" class="text-dark link-hover d-block"
-                ><i
+              <a href="#" class="text-dark link-hover d-block">
+                <i
                   class="fa-solid fa-cart-shopping fs-5 px-2 icon"
                   id="cartIcon"
-                ></i
-              ></a>
+                ></i>
+              </a>
             </li>
             <li class="position-relative user-dropdown">
-              <a href="#" class="text-dark link-hover d-block"
-                ><i
+              <a href="#" class="text-dark link-hover d-block">
+                <i
                   class="fa-solid fa-circle-user fs-5 px-2 icon"
                   id="userIcon"
-                ></i
-              ></a>
+                ></i>
+              </a>
               <div
                 class="user-menu position-absolute top-100 end-0 bg-white shadow p-3 rounded d-none"
               >
@@ -121,7 +134,7 @@
           </ul>
         </div>
       </div>
-    </header>
+    </header> 
 
     <div class="page container-fluid">
       <img
@@ -172,18 +185,17 @@
           </div>
         </div>
       </div>
-    </div>
+    </div> 
 
-    <div class="footer p-4 d-none d-lg-block">
+      <div class="footer p-4 d-none d-lg-block">
       <div
         class="category-slider d-flex align-items-center overflow-hidden"
       ></div>
-    </div>
+    </div>  
 
-    <div class="new-arrivals container py-5">
+      <div class="new-arrivals container py-5">
       <h1 class="newArrivals text-center p-3 fw-bolder">NEW ARRIVALS</h1>
       <div class="row g-4" id="productsContainer"></div>
-      <!-- Dynamic Content Here -->
       <div class="d-flex justify-content-center mt-4">
         <a
           href="shop.html"
@@ -193,12 +205,12 @@
         </a>
       </div>
       <hr />
-    </div>
+    </div>  
 
-    <div class="new-arrivals container py-5">
+      <div class="new-arrivals container py-5">
       <h1 class="text-center p-3 fw-bolder">Top Selling</h1>
       <div class="row g-4" id="topSellingContainer"></div>
-      <!-- Dynamic Content Here -->
+
       <div class="d-flex justify-content-center mt-4">
         <a
           href="view.html"
@@ -207,12 +219,11 @@
           View ALL
         </a>
       </div>
-    </div>
+    </div>  
 
-    <div class="dress-style container p-5">
+      <div class="dress-style container p-5">
       <h1 class="text-center fw-bold mb-4">BROWSE BY DRESS STYLE</h1>
       <div class="row g-4">
-        <!-- Casual (25%) -->
         <div class="col-6 col-lg-3">
           <div
             class="position-relative bg-light overflow-hidden h-100 imgs-radius"
@@ -228,7 +239,6 @@
           </div>
         </div>
 
-        <!-- Formal (75%) -->
         <div class="col-6 col-lg-9">
           <div
             class="position-relative bg-light imgs-radius overflow-hidden h-100"
@@ -244,7 +254,6 @@
           </div>
         </div>
 
-        <!-- Party (75%) -->
         <div class="col-6 col-lg-9">
           <div
             class="position-relative bg-light imgs-radius overflow-hidden h-100"
@@ -275,13 +284,13 @@
           </div>
         </div>
       </div>
-    </div>
+    </div>  
 
     <!--slider-->
-    <div
-      class="container d-flex align-items-center justify-content-between fw-bold p-3"
+      <div
+      class="container d-flex align-items-center justify-content-between fw-bold p-4"
     >
-      <h1>OUR HAPPY CUSTOMERS</h1>
+      <h1 >OUR HAPPY CUSTOMERS</h1>
       <div class="arrows">
         <i class="fa-solid fa-arrow-left fw-bold icon p-1 fa"></i>
         <i class="fa-solid fa-arrow-right icon p-1"></i>
@@ -289,154 +298,22 @@
     </div>
     <div class="mainSlider">
       <div class="slickSlider">
+        <div class="text-center py-5" id="loadingSpinner">
+          <div class="spinner-border text-primary" role="status">
+            <span class="visually-hidden">Loading...</span>
+          </div>
+        </div>
         <div class="box p-4">
           <div class="card rounded-3 p-5">
-            <div class="score text-warning">
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-regular fa-star"></i>
-              <span class="text-dark">4.5/5</span>
-            </div>
-            <div class="name">
-              <h3>Sarah M.</h3>
-              <p>
-                "I'm blown away by the quality and style of the clothes I
-                received from Shop.co. From casual wear to elegant dresses,
-                every piece I've bought has exceeded my expectations.”
-              </p>
-            </div>
+       
           </div>
         </div>
 
-        <div class="box p-4">
-          <div class="card rounded-3 p-5">
-            <div class="score text-warning">
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-regular fa-star"></i>
-              <span class="text-dark">4.5/5</span>
-            </div>
-            <div class="name">
-              <h3>Alex K.</h3>
-              <p>
-                "I'm blown away by the quality and style of the clothes I
-                received from Shop.co. From casual wear to elegant dresses,
-                every piece I've bought has exceeded my expectations.”
-              </p>
-            </div>
-          </div>
-        </div>
-
-        <div class="box p-4">
-          <div class="card rounded-3 p-5">
-            <div class="score text-warning">
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-regular fa-star"></i>
-              <span class="text-dark">4.5/5</span>
-            </div>
-            <div class="name">
-              <h3>James L.</h3>
-              <p>
-                "I'm blown away by the quality and style of the clothes I
-                received from Shop.co. From casual wear to elegant dresses,
-                every piece I've bought has exceeded my expectations.”
-              </p>
-            </div>
-          </div>
-        </div>
-
-        <div class="box p-4">
-          <div class="card rounded-3 p-5">
-            <div class="score text-warning">
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-regular fa-star"></i>
-              <span class="text-dark">4.5/5</span>
-            </div>
-            <div class="name">
-              <h3>Sarah M.</h3>
-              <p>
-                "I'm blown away by the quality and style of the clothes I
-                received from Shop.co. From casual wear to elegant dresses,
-                every piece I've bought has exceeded my expectations.”
-              </p>
-            </div>
-          </div>
-        </div>
-
-        <div class="box p-4">
-          <div class="card rounded-3 p-5">
-            <div class="score text-warning">
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-regular fa-star"></i>
-              <span class="text-dark">4.5/5</span>
-            </div>
-            <div class="name">
-              <h3>Sarah M.</h3>
-              <p>
-                "I'm blown away by the quality and style of the clothes I
-                received from Shop.co. From casual wear to elegant dresses,
-                every piece I've bought has exceeded my expectations.”
-              </p>
-            </div>
-          </div>
-        </div>
-        <div class="box p-4">
-          <div class="card rounded-3 p-5">
-            <div class="score text-warning">
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-regular fa-star"></i>
-              <span class="text-dark">4.5/5</span>
-            </div>
-            <div class="name">
-              <h3>Sarah M.</h3>
-              <p>
-                "I'm blown away by the quality and style of the clothes I
-                received from Shop.co. From casual wear to elegant dresses,
-                every piece I've bought has exceeded my expectations.”
-              </p>
-            </div>
-          </div>
-        </div>
-        <div class="box p-4">
-          <div class="card rounded-3 p-5">
-            <div class="score text-warning">
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-regular fa-star"></i>
-              <span class="text-dark">4.5/5</span>
-            </div>
-            <div class="name">
-              <h3>Sarah M.</h3>
-              <p>
-                "I'm blown away by the quality and style of the clothes I
-                received from Shop.co. From casual wear to elegant dresses,
-                every piece I've bought has exceeded my expectations.”
-              </p>
-            </div>
-          </div>
-        </div>
+      
       </div>
-    </div>
+    </div>  
 
-    <footer class="bg-light position-relative pt-5">
+     <footer class="bg-light position-relative pt-5">
       <div class="container border-bottom">
         <div
           class="subscribe bg-dark p-lg-4 p-2 rounded-3 d-lg-flex d-none align-items-center position-absolute gap-3 justify-content-between px-2"
@@ -582,7 +459,7 @@
           </div>
         </div>
       </div>
-      <div class="container d-flex justify-content-between p-4 text-nowrap">
+      <div class="container  d-flex flex-column flex-lg-row justify-content-between p-4 text-nowrap">
         <span class="fw-light fs-6">© 2000-2021, All rights reserved</span>
         <div class="images">
           <img src="images/visa.png" alt="" class="link-hover" />
@@ -592,7 +469,8 @@
           <img src="images/google.png" alt="" class="link-hover" />
         </div>
       </div>
-    </footer>
+    </footer> 
+
   </body>
   <!-- Latest jQuery 3.x -->
   <script

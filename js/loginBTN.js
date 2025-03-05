@@ -14,13 +14,11 @@ function ShowAuthBtn() {
     userInfo.classList.add("d-flex");
     loginButton.classList.remove("d-flex");
     loginButton.classList.add("d-none");
-    cartIcon.classList.remove("d-none");
-    userIcon.classList.remove("d-none");
+
   } else {
     userInfo.classList.remove("d-flex");
     userInfo.classList.add("d-none");
-    loginButton.classList.remove("d-none");
-    loginButton.classList.add("d-flex");
+
     cartIcon.classList.add("d-none");
     userIcon.classList.add("d-none");
   }

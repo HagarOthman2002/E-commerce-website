@@ -28,11 +28,10 @@
       <div
         class="d-flex align-items-center justify-content-between p-3 border-bottom pb-4 px-4"
       >
-        <!-- <h1 class="logo fw-bolder fs-4">SHOP.CO</h1> -->
-         <a href="main.html"><img src="images\SHOP.CO.png" alt=""></a>
+        <a href="main.html"><img src="images\SHOP.CO.png" alt="" /></a>
 
-        <ul class="nav gap-2 d-flex flex-nowrap text-nowrap">
-          <li class="nav-item position-relative ">
+        <ul class="nav gap-2 d-flex flex-nowrap text-nowrap d-none">
+          <li class="nav-item position-relative">
             <a href="#" class="nav-link text-dark p-0 p-sm-2 link-hover d-block"
               >Shop <i class="fa-solid fa-angle-down"></i
             ></a>
@@ -75,7 +74,6 @@
           </li>
         </ul>
 
-        <!-- Search Bar -->
         <input
           type="text"
           class="form-control rounded-pill border-0 shadow-sm w-25 d-none d-lg-flex align-items-center"
@@ -83,36 +81,56 @@
           placeholder="Search for products..."
         />
 
-        <!-- Login Button -->
         <a
-          href="index.html"
+          href="login.html"
           class="btn rounded-pill bg-dark text-white px-sm-3 px-lg-5 py-sm-2"
           id="loginButton"
           >Login</a
         >
 
-        <!-- Icons (Cart & User) -->
-        <div class="icons d-flex gap-1 d-none d-lg-flex">
-          <ul class="list-unstyled d-flex m-0">
+        <div class="icons d-flex align-items-center gap-1" id="userInfo">
+          <div class="dropdown d-md-none">
+            <button
+              class="btn btn-dark dropdown-toggle"
+              type="button"
+              id="mobileMenu"
+              data-bs-toggle="dropdown"
+            >
+              Menu
+            </button>
+            <ul class="dropdown-menu" aria-labelledby="mobileMenu">
+              <li><a href="#" class="dropdown-item">Shop</a></li>
+              <li><a href="#" class="dropdown-item">On Sale</a></li>
+              <li><a href="#" class="dropdown-item">New Arrivals</a></li>
+              <li><a href="#" class="dropdown-item">Brands</a></li>
+            </ul>
+          </div>
+
+          <ul class="list-unstyled d-flex m-3">
             <li class="">
-              <a href="#" class="text-dark link-hover d-block "
-                ><i
+              <a href="#" class="text-dark link-hover d-block">
+                <i
                   class="fa-solid fa-cart-shopping fs-5 px-2 icon"
                   id="cartIcon"
-                ></i
-              ></a>
+                ></i>
+              </a>
             </li>
-            <li class="position-relative user-dropdown ">
-              <a href="#" class="text-dark link-hover d-block"
-                ><i
+            <li class="position-relative user-dropdown">
+              <a href="#" class="text-dark link-hover d-block">
+                <i
                   class="fa-solid fa-circle-user fs-5 px-2 icon"
                   id="userIcon"
-                ></i
-              ></a>
+                ></i>
+              </a>
               <div
                 class="user-menu position-absolute top-100 end-0 bg-white shadow p-3 rounded d-none"
               >
-                <a href="login.html" class="btn btn-danger w-100">Log Out</a>
+                <a
+                  href="login.html"
+                  class="btn btn-danger w-100"
+                  id="logoutButton"
+                  >Log Out</a
+                >
               </div>
             </li>
           </ul>
@@ -125,7 +143,7 @@
       <i class="fa-solid fa-chevron-right p-1"></i>
     </div>
 
-    <div class="page-content d-flex container ">
+    <div class="page-content d-flex container">
       <div class="filter container rounded-3 w-25">
         <div
           class="d-flex justify-content-between align-items-center border-bottom"
@@ -288,52 +306,80 @@
             <h3 class="fs-4 mb-0">Size</h3>
             <i class="fa-solid fa-chevron-up"></i>
           </div>
-        
+
           <div class="select-size row d-flex mt-3">
             <div class="col-lg-6">
-              <div class="row row-cols-2 g-2"> <!-- Adjusted spacing -->
-                <div class=" d-flex align-items-center justify-content-center ">
-                  <a href="#" class="btn w-100 rounded-pill bg-light text-secondary py-2 d-flex align-items-center justify-content-center text-nowrap o">
+              <div class="row row-cols-2 g-2">
+                <!-- Adjusted spacing -->
+                <div class="d-flex align-items-center justify-content-center">
+                  <a
+                    href="#"
+                    class="btn w-100 rounded-pill bg-light text-secondary py-2 d-flex align-items-center justify-content-center text-nowrap o"
+                  >
                     XX-Small
                   </a>
                 </div>
-                <div class=" d-flex align-items-center justify-content-center">
-                  <a href="#" class="btn w-100 rounded-pill bg-light text-secondary py-2 d-flex align-items-center justify-content-center text-nowrap">
+                <div class="d-flex align-items-center justify-content-center">
+                  <a
+                    href="#"
+                    class="btn w-100 rounded-pill bg-light text-secondary py-2 d-flex align-items-center justify-content-center text-nowrap"
+                  >
                     X-Small
                   </a>
                 </div>
-                <div class=" d-flex align-items-center justify-content-center">
-                  <a href="#" class="btn w-100 rounded-pill bg-light text-secondary py-2 d-flex align-items-center justify-content-center text-nowrap">
+                <div class="d-flex align-items-center justify-content-center">
+                  <a
+                    href="#"
+                    class="btn w-100 rounded-pill bg-light text-secondary py-2 d-flex align-items-center justify-content-center text-nowrap"
+                  >
                     Small
                   </a>
                 </div>
-                <div class=" d-flex align-items-center justify-content-center">
-                  <a href="#" class="btn w-100 rounded-pill bg-light text-secondary py-2 d-flex align-items-center justify-content-center text-nowrap">
+                <div class="d-flex align-items-center justify-content-center">
+                  <a
+                    href="#"
+                    class="btn w-100 rounded-pill bg-light text-secondary py-2 d-flex align-items-center justify-content-center text-nowrap"
+                  >
                     Medium
                   </a>
                 </div>
-                <div class=" d-flex align-items-center justify-content-center">
-                  <a href="#" class="btn w-100 rounded-pill bg-light text-secondary py-2 d-flex align-items-center justify-content-center text-nowrap">
+                <div class="d-flex align-items-center justify-content-center">
+                  <a
+                    href="#"
+                    class="btn w-100 rounded-pill bg-light text-secondary py-2 d-flex align-items-center justify-content-center text-nowrap"
+                  >
                     Large
                   </a>
                 </div>
-                <div class=" d-flex align-items-center justify-content-center">
-                  <a href="#" class="btn w-100 rounded-pill bg-light text-secondary py-2 d-flex align-items-center justify-content-center text-nowrap">
+                <div class="d-flex align-items-center justify-content-center">
+                  <a
+                    href="#"
+                    class="btn w-100 rounded-pill bg-light text-secondary py-2 d-flex align-items-center justify-content-center text-nowrap"
+                  >
                     X-Large
                   </a>
                 </div>
-                <div class=" d-flex align-items-center justify-content-center">
-                  <a href="#" class="btn w-100 rounded-pill bg-dark text-white fw-bold py-2 d-flex align-items-center justify-content-center text-nowrap">
+                <div class="d-flex align-items-center justify-content-center">
+                  <a
+                    href="#"
+                    class="btn w-100 rounded-pill bg-dark text-white fw-bold py-2 d-flex align-items-center justify-content-center text-nowrap"
+                  >
                     XX-Large
                   </a>
                 </div>
-                <div class=" d-flex align-items-center justify-content-center">
-                  <a href="#" class="btn w-100 rounded-pill bg-light text-secondary py-2 d-flex align-items-center justify-content-center text-nowrap">
+                <div class="d-flex align-items-center justify-content-center">
+                  <a
+                    href="#"
+                    class="btn w-100 rounded-pill bg-light text-secondary py-2 d-flex align-items-center justify-content-center text-nowrap"
+                  >
                     3X-Large
                   </a>
                 </div>
-                <div class=" d-flex align-items-center justify-content-center">
-                  <a href="#" class="btn w-100 rounded-pill bg-light text-secondary py-2 d-flex align-items-center justify-content-center text-nowrap">
+                <div class="d-flex align-items-center justify-content-center">
+                  <a
+                    href="#"
+                    class="btn w-100 rounded-pill bg-light text-secondary py-2 d-flex align-items-center justify-content-center text-nowrap"
+                  >
                     4X-Large
                   </a>
                 </div>
@@ -341,7 +387,6 @@
             </div>
           </div>
         </div>
-        
 
         <div class="container">
           <div class="d-flex justify-content-between align-items-center py-2">
@@ -384,34 +429,52 @@
         </div>
       </div>
 
-      <div class="shop container py-5   mb-5">
+      <div class="shop container py-5 mb-5">
         <div class="row g-4 border-bottom pb-2" id="shopContainer"></div>
         <nav aria-label="Page navigation">
           <ul class="pagination justify-content-between align-items-center">
             <!-- Previous Button -->
             <li class="page-item">
-              <a class="page-link  d-flex align-items-center px-4 py-2 border rounded-3" href="#">
+              <a
+                class="page-link d-flex align-items-center px-4 py-2 border rounded-3"
+                href="#"
+              >
                 <i class="fa-solid fa-arrow-left me-2"></i> Previous
               </a>
             </li>
-        
+
             <!-- Page Numbers (Centered) -->
-           
-              <ul class="pagination mx-auto mt-5">
-                <li class="page-item active"><a class="page-link text-dark bg-secondary" href="#">1</a></li>
-                <li class="page-item"><a class="page-link text-secondary" href="#">2</a></li>
-                <li class="page-item"><a class="page-link text-secondary" href="#">3</a></li>
-                <li class="page-item disabled"><a class="page-link text-secondary" href="#">...</a></li>
-                <li class="page-item"><a class="page-link text-secondary" href="#">8</a></li>
-                <li class="page-item"><a class="page-link text-secondary" href="#">9</a></li>
-                <li class="page-item"><a class="page-link text-secondary" href="#">10</a></li>
-              </ul>
-           
-            
-        
+
+            <ul class="pagination mx-auto mt-5">
+              <li class="page-item active">
+                <a class="page-link text-dark bg-secondary" href="#">1</a>
+              </li>
+              <li class="page-item">
+                <a class="page-link text-secondary" href="#">2</a>
+              </li>
+              <li class="page-item">
+                <a class="page-link text-secondary" href="#">3</a>
+              </li>
+              <li class="page-item disabled">
+                <a class="page-link text-secondary" href="#">...</a>
+              </li>
+              <li class="page-item">
+                <a class="page-link text-secondary" href="#">8</a>
+              </li>
+              <li class="page-item">
+                <a class="page-link text-secondary" href="#">9</a>
+              </li>
+              <li class="page-item">
+                <a class="page-link text-secondary" href="#">10</a>
+              </li>
+            </ul>
+
             <!-- Next Button -->
             <li class="page-item">
-              <a class="page-link  d-flex align-items-center px-4 py-2 border rounded-3 " href="#">
+              <a
+                class="page-link d-flex align-items-center px-4 py-2 border rounded-3"
+                href="#"
+              >
                 Next <i class="fa-solid fa-arrow-right ms-2"></i>
               </a>
             </li>
@@ -419,8 +482,6 @@
         </nav>
       </div>
     </div>
-   
-    
 
     <footer class="bg-light position-relative pt-5">
       <div class="container border-bottom">
@@ -455,27 +516,31 @@
               wear. From women to men.
             </p>
             <div class="social-icons">
-              <a href=""><i class="fa-brands fa-twitter text-dark icon link-hover"></i></a>
+              <a href=""
+                ><i class="fa-brands fa-twitter text-dark icon link-hover"></i
+              ></a>
               <a href=""
                 ><i class="fa-brands fa-facebook text-dark icon link-hover"></i
               ></a>
               <a href=""
                 ><i class="fa-brands fa-instagram text-dark icon link-hover"></i
               ></a>
-              <a href=""><i class="fa-brands fa-github text-dark icon link-hover"></i></a>
+              <a href=""
+                ><i class="fa-brands fa-github text-dark icon link-hover"></i
+              ></a>
             </div>
           </div>
           <div class="col-6 col-md-4 col-lg-2">
             <h1 class="fs-4">Company</h1>
             <ul class="list-unstyled lh-lg">
               <li class="link-hover">
-                <a href="" class="text-decoration-none text-secondary ">About</a>
+                <a href="" class="text-decoration-none text-secondary">About</a>
               </li>
               <li class="link-hover">
                 <a href="" class="text-decoration-none text-secondary"
                   >Features</a
                 >
-              </li >
+              </li>
               <li class="link-hover">
                 <a href="" class="text-decoration-none text-secondary">About</a>
               </li>
@@ -524,7 +589,7 @@
                   >Manage Deliveries</a
                 >
               </li>
-              <li class="link-hover" >
+              <li class="link-hover">
                 <a href="" class="text-decoration-none text-secondary"
                   >Orders</a
                 >
@@ -567,11 +632,11 @@
       <div class="container d-flex justify-content-between p-4 text-nowrap">
         <span class="fw-light fs-6">© 2000-2021, All rights reserved</span>
         <div class="images">
-          <img src="images/visa.png" alt=""  class="link-hover"> 
-          <img src="images/Mastercard.png" alt=""  class="link-hover">
-          <img src="images/pay.png" alt="" class="link-hover">
-          <img src="images/pay.png" alt="" class="link-hover">
-          <img src="images/google.png" alt="" class="link-hover">
+          <img src="images/visa.png" alt="" class="link-hover" />
+          <img src="images/Mastercard.png" alt="" class="link-hover" />
+          <img src="images/pay.png" alt="" class="link-hover" />
+          <img src="images/pay.png" alt="" class="link-hover" />
+          <img src="images/google.png" alt="" class="link-hover" />
         </div>
       </div>
     </footer>
@@ -580,10 +645,5 @@
   <script src="js/loginBTN.js"></script>
   <script src="js/shop.js"></script>
 
-  <script>
-
-
-
-
-  </script>
+  <script></script>
 </html>

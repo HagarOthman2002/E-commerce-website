@@ -10,7 +10,7 @@ html {
 /* Start Global Rules */
 
 body {
-  font-family: "Jost", serif;
+  font-family: "Integral CF", serif;
 }
 
 header .logo {
@@ -185,10 +185,36 @@ header .icons {
   transform: translateX(3px);
 }
 
-.imgs-radius{
+.imgs-radius {
   border-radius: 30px;
 }
-.dress-style .text-imgs{
+.dress-style .text-imgs {
   top: 80px;
   left: 80px;
+}
+
+.dropdown:hover .dropdown-menu {
+  display: block;
+}
+
+.dropdown-menu {
+  margin-top: 0;
+}
+
+.dropdown-menu {
+  transition: opacity 0.3s ease, visibility 0.3s ease;
+  opacity: 0;
+  visibility: hidden;
+  display: block;
+  z-index: 5;
+}
+
+.dropdown:hover .dropdown-menu {
+  opacity: 1;
+  visibility: visible;
+}
+@media (max-width: 767.98px) {
+  .slick-slide {
+    height: 45%;
+  }
 }
