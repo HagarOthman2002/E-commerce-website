@@ -10,9 +10,9 @@ document.addEventListener("DOMContentLoaded", function () {
           <div class="col-6 col-md-4 col-lg-3 text-center">
             <img src="${product.thumbnail}" alt="${
           product.title
-        }" class="rounded-4 w-100 p-3" />
-            <h6>${product.title}</h6>
-            <div class="score text-warning">
+        }" class="rounded-4 w-100 p-3 bg-light " />
+            <h6 class="pt-3">${product.title}</h6>
+            <div class="score text-warning ">
               ${generateStars(product.rating)}
               <span class="text-dark">${product.rating.toFixed(1)}/5</span>
             </div>

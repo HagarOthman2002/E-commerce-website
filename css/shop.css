@@ -87,7 +87,7 @@ input[type="range"]::-moz-range-thumb {
 .pagination .page-item .page-link {
   border: none;
   padding: 10px 16px;
-  margin: 0 5px; 
+  margin: 0 5px;
   color: black;
   font-weight: bold;
 }
@@ -105,7 +105,7 @@ input[type="range"]::-moz-range-thumb {
 .icon:hover {
   color: blue !important;
 }
-footer{
+footer {
   margin-top: 15rem;
 }
 .link-hover {

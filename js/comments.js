@@ -8,13 +8,16 @@ $(document).ready(function () {
       data.comments.forEach((comment) => {
         commentsHTML += `
         <div class="box p-4">
-          <div class="card rounded-3 p-5 " >
+          <div class="card  p-4 " style="width: 350px; min-height: 200px; border-radius:15px " >
             <div class="likes text-primary">
-              <i class="fa-solid fa-thumbs-up"></i> <span>${comment.likes}</span>
+              <i class="fa-solid fa-thumbs-up "></i> <span >${comment.likes}</span>
             </div>
             <div class="name">
-              <h3>${comment.user.username}</h3>
-              <p>"${comment.body}"</p>
+              <div class="d-flex align-items-center" >
+                 <h3 class="py-2">${comment.user.username}.  </h3>
+                 <i class="fa-solid fa-circle-check text-success"></i>
+              </div>
+              <p class="text-secondary">"${comment.body}"</p>
             </div>
           </div>
         </div>

@@ -80,31 +80,31 @@ document.addEventListener("DOMContentLoaded", function () {
       return res.json();
     })
     .then(data => {
-      console.log("Login successful:", data);
-      localStorage.setItem("token", data.token);
+  
+      localStorage.setItem("token", JSON.stringify(data.accessToken));
       window.location.href = 'main.html';
-      refreshToken();
+   
     })
     .catch(error => {
       showError(document.getElementById("password"), "passwordError", error.message);
     });
   }
 
-  function refreshToken() {
-    fetch('https://dummyjson.com/auth/refresh', {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({
-        refreshToken: localStorage.getItem("token"),
-        expiresInMins: 30
-      }),
-      credentials: 'include'
-    })
-    .then(res => res.json())
-    .then(data => {
-      console.log("Token refreshed:", data);
-      localStorage.setItem("token", data.token);
-    })
-    .catch(error => console.error("Token refresh failed:", error));
-  }
+  // function refreshToken() {
+  //   fetch('https://dummyjson.com/auth/refresh', {
+  //     method: 'POST',
+  //     headers: { 'Content-Type': 'application/json' },
+  //     body: JSON.stringify({
+  //       refreshToken: localStorage.getItem("token"),
+  //       expiresInMins: 30
+  //     }),
+  //     credentials: 'include'
+  //   })
+  //   .then(res => res.json())
+  //   .then(data => {
+
+  //     localStorage.setItem("token", data.accessToken);
+  //   })
+  //   .catch(error => console.error("Token refresh failed:", error));
+  // }
 });

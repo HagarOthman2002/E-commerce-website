@@ -1,8 +1,44 @@
 document.addEventListener("DOMContentLoaded", function () {
-    const token = localStorage.getItem("token");
-    const loginButton = document.querySelector('header a[href="index.html"]');
+  ShowAuthBtn();
+});
 
-    if (token && loginButton) {
-      loginButton.remove();
-    }
+function ShowAuthBtn() {
+  const token = localStorage.getItem("token");
+  const loginButton = document.getElementById("loginButton");
+  const userInfo = document.getElementById("userInfo");
+  const cartIcon = document.getElementById("cartIcon");
+  const userIcon = document.getElementById("userIcon");
+
+  if (token) {
+    userInfo.classList.remove("d-none");
+    userInfo.classList.add("d-flex");
+    loginButton.classList.remove("d-flex");
+    loginButton.classList.add("d-none");
+    cartIcon.classList.remove("d-none");
+    userIcon.classList.remove("d-none");
+  } else {
+    userInfo.classList.remove("d-flex");
+    userInfo.classList.add("d-none");
+    loginButton.classList.remove("d-none");
+    loginButton.classList.add("d-flex");
+    cartIcon.classList.add("d-none");
+    userIcon.classList.add("d-none");
+  }
+}
+
+function logOut() {
+  const token = localStorage.getItem("token");
+
+  if (token) {
+    localStorage.removeItem("token");
+    ShowAuthBtn();
+    window.location.href = "main.html";
+  }
+}
+
+document
+  .getElementById("logoutButton")
+  .addEventListener("click", function (event) {
+    event.preventDefault();
+    logOut();
   });

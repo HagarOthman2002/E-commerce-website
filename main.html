@@ -18,58 +18,112 @@
   </head>
   <body>
     <header class="position-relative">
-      <!-- Top Signup Banner -->
       <h6 class="text-white bg-dark p-3 text-center">
         Sign up and get 20% off your first order.
         <a href="#" class="text-white fw-light icon">Sign Up Now</a>
       </h6>
-    
-      <!-- Main Navbar -->
-      <div class="d-flex align-items-center justify-content-between p-3 border-bottom pb-4 px-4">
-        <h1 class="logo fw-bolder fs-4">SHOP.CO</h1>
-    
-        <!-- Navigation Menu -->
+
+      <div
+        class="d-flex align-items-center justify-content-between p-3 border-bottom pb-4 px-4"
+      >
+        <!-- <h1 class="logo fw-bolder fs-4">SHOP.CO</h1> -->
+        <a href="main.html"><img src="images\SHOP.CO.png" alt="" /></a>
+
         <ul class="nav gap-2 d-flex flex-nowrap text-nowrap">
-          <!-- Shop Dropdown (Static) -->
-          <li class="nav-item position-relative link-hover">
-            <a href="#" class="nav-link text-dark p-0 p-sm-2 ">Shop <i class="fa-solid fa-angle-down"></i></a>
+          <li class="nav-item position-relative">
+            <a href="#" class="nav-link text-dark p-0 p-sm-2 link-hover d-block"
+              >Shop <i class="fa-solid fa-angle-down"></i
+            ></a>
             <ul class="dropdown-menu bg-white shadow-sm rounded">
-              <li><a href="#" class="dropdown-item text-dark px-3 py-2 link-hover">Men's Clothing</a></li>
-              <li><a href="#" class="dropdown-item text-dark px-3 py-2 link-hover">Women's Clothing</a></li>
-              <li><a href="#" class="dropdown-item text-dark px-3 py-2 link-hover">Accessories</a></li>
-              <li><a href="#" class="dropdown-item text-dark px-3 py-2 link-hover">Shoes</a></li>
-              <li><a href="#" class="dropdown-item text-dark px-3 py-2 link-hover">Electronics</a></li>
+              <li>
+                <a href="#" class="dropdown-item text-dark px-3 py-2 link-hover"
+                  >Men's Clothing</a
+                >
+              </li>
+              <li>
+                <a href="#" class="dropdown-item text-dark px-3 py-2 link-hover"
+                  >Women's Clothing</a
+                >
+              </li>
+              <li>
+                <a href="#" class="dropdown-item text-dark px-3 py-2 link-hover"
+                  >Accessories</a
+                >
+              </li>
+              <li>
+                <a href="#" class="dropdown-item text-dark px-3 py-2 link-hover"
+                  >Shoes</a
+                >
+              </li>
+              <li>
+                <a href="#" class="dropdown-item text-dark px-3 py-2 link-hover"
+                  >Electronics</a
+                >
+              </li>
             </ul>
           </li>
-          <li class="nav-item link-hover"><a href="#" class="nav-link p-0 p-sm-2 text-dark">On Sale</a></li>
-          <li class="nav-item link-hover"><a href="#" class="nav-link p-0 p-sm-2 text-dark">New Arrivals</a></li>
-          <li class="nav-item link-hover"><a href="#" class="nav-link p-0 p-sm-2 text-dark">Brands</a></li>
+          <li class="nav-item link-hover">
+            <a href="#" class="nav-link p-0 p-sm-2 text-dark">On Sale</a>
+          </li>
+          <li class="nav-item link-hover">
+            <a href="#" class="nav-link p-0 p-sm-2 text-dark">New Arrivals</a>
+          </li>
+          <li class="nav-item link-hover">
+            <a href="#" class="nav-link p-0 p-sm-2 text-dark">Brands</a>
+          </li>
         </ul>
-    
+
         <!-- Search Bar -->
-        <input type="text" class="form-control rounded-pill border-0 shadow-sm w-25 d-none d-lg-flex align-items-center"
-          name="Search" placeholder="Search for products..." />
-    
+        <input
+          type="text"
+          class="form-control rounded-pill border-0 shadow-sm w-25 d-none d-lg-flex align-items-center"
+          name="Search"
+          placeholder="Search for products..."
+        />
+
         <!-- Login Button -->
-        <a href="index.html" class="btn rounded-pill bg-dark text-white px-sm-3 px-lg-5 py-sm-2" id="loginButton">Login</a>
-    
+        <a
+          href="login.html"
+          class="btn rounded-pill bg-dark text-white px-sm-3 px-lg-5 py-sm-2"
+          id="loginButton"
+          >Login</a
+        >
+
         <!-- Icons (Cart & User) -->
-        <div class="icons d-flex gap-1 d-none d-lg-flex">
+        <div class="icons d-flex gap-1 d-lg-flex" id="userInfo">
           <ul class="list-unstyled d-flex m-0">
-            <li class="link-hover"><a href="#" class="text-dark"><i class="fa-solid fa-cart-shopping fs-5 px-2 icon" id="cartIcon"></i></a></li>
-            <li class="position-relative user-dropdown link-hover">
-              <a href="#" class="text-dark"><i class="fa-solid fa-circle-user fs-5 px-2 icon" id="userIcon"></i></a>
-              <div class="user-menu position-absolute top-100 end-0 bg-white shadow p-3 rounded d-none">
-                <a href="login.html" class="btn btn-danger w-100">Log Out</a>
+            <li class="">
+              <a href="#" class="text-dark link-hover d-block"
+                ><i
+                  class="fa-solid fa-cart-shopping fs-5 px-2 icon"
+                  id="cartIcon"
+                ></i
+              ></a>
+            </li>
+            <li class="position-relative user-dropdown">
+              <a href="#" class="text-dark link-hover d-block"
+                ><i
+                  class="fa-solid fa-circle-user fs-5 px-2 icon"
+                  id="userIcon"
+                ></i
+              ></a>
+              <div
+                class="user-menu position-absolute top-100 end-0 bg-white shadow p-3 rounded d-none"
+              >
+                <a
+                  href="login.html"
+                  class="btn btn-danger w-100"
+                  id="logoutButton"
+                  >Log Out</a
+                >
               </div>
             </li>
           </ul>
         </div>
       </div>
     </header>
-    
 
-    <div class="page">
+    <div class="page container-fluid">
       <img
         src="images/Vector (1).png"
         alt=""
@@ -82,9 +136,9 @@
       />
 
       <div
-        class="content p-5 text-lg-start d-lg-block d-flex flex-column justify-content-center align-items-center"
+        class="content d-flex flex-column justify-content-center p-5 h-100 text-lg-start"
       >
-        <p class="main-text fw-bolder display-1 lh-1">
+        <p class="main-text fw-bolder display-1 lh-1 w-lg-10">
           FIND CLOTHES THAT MATCHES YOUR STYLE
         </p>
         <p class="w-lg-50 text-secondary">
@@ -92,27 +146,30 @@
           designed to bring out your individuality and cater to your sense of
           style.
         </p>
-        <a
-          href="shop.html"
-          class="btn rounded-pill text-white p-2 px-5 shop-btn"
-          >Shop Now</a
-        >
-      </div>
+        <div class="d-flex justify-content-lg-start justify-content-center">
+          <a
+            href="shop.html"
+            class="btn rounded-pill text-white p-2 px-5 shop-btn w-auto"
+          >
+            Shop Now
+          </a>
+        </div>
 
-      <div
-        class="statistics d-flex align-items-center gap-4 justify-content-lg-start justify-content-center"
-      >
-        <div class="ps-4 border-start border-2">
-          <p class="display-6 ">200+</p>
-          <span>International Brands</span>
-        </div>
-        <div class="ps-4 border-start border-2">
-          <p class="display-6">2,000+</p>
-          <span>High-Quality Products</span>
-        </div>
-        <div class="ps-4 border-start border-2">
-          <p class="display-6">30,000+</p>
-          <span>Happy Customers</span>
+        <div
+          class="statistics d-flex align-items-center gap-4 justify-content-lg-start justify-content-center pt-4"
+        >
+          <div class="ps-4">
+            <p class="display-6">200+</p>
+            <span>International Brands</span>
+          </div>
+          <div class="ps-4 border-start border-2">
+            <p class="display-6">2,000+</p>
+            <span>High-Quality Products</span>
+          </div>
+          <div class="ps-4 border-start border-2">
+            <p class="display-6">30,000+</p>
+            <span>Happy Customers</span>
+          </div>
         </div>
       </div>
     </div>
@@ -130,11 +187,12 @@
       <div class="d-flex justify-content-center mt-4">
         <a
           href="shop.html"
-          class="bg-white rounded-pill p-2 px-5 border border-secondary text-decoration-none text-dark view-all-btn"
+          class="bg-white rounded-pill p-2 px-5 border border-secondary text-decoration-none text-dark view-all-btn mb-3"
         >
           View ALL
         </a>
       </div>
+      <hr />
     </div>
 
     <div class="new-arrivals container py-5">
@@ -151,22 +209,20 @@
       </div>
     </div>
 
-    <div class="dress-style container rounded-3 p-5">
+    <div class="dress-style container p-5">
       <h1 class="text-center fw-bold mb-4">BROWSE BY DRESS STYLE</h1>
       <div class="row g-4">
         <!-- Casual (25%) -->
         <div class="col-6 col-lg-3">
           <div
-            class="position-relative bg-light rounded-3 overflow-hidden h-100"
+            class="position-relative bg-light overflow-hidden h-100 imgs-radius"
           >
             <img
               src="images/image 11.png"
               alt="Casual"
               class="img-fluid h-100 object-fit-cover w-100"
             />
-            <h4
-              class="position-absolute top-50 start-50 translate-middle fw-bold"
-            >
+            <h4 class="position-absolute text-imgs translate-middle fw-bold">
               Casual
             </h4>
           </div>
@@ -175,16 +231,14 @@
         <!-- Formal (75%) -->
         <div class="col-6 col-lg-9">
           <div
-            class="position-relative bg-light rounded-3 overflow-hidden h-100"
+            class="position-relative bg-light imgs-radius overflow-hidden h-100"
           >
             <img
               src="images/image 13.png"
               alt="Formal"
               class="img-fluid h-100 object-fit-cover w-100"
             />
-            <h4
-              class="position-absolute top-50 start-50 translate-middle fw-bold"
-            >
+            <h4 class="position-absolute translate-middle fw-bold text-imgs">
               Formal
             </h4>
           </div>
@@ -193,16 +247,14 @@
         <!-- Party (75%) -->
         <div class="col-6 col-lg-9">
           <div
-            class="position-relative bg-light rounded-3 overflow-hidden h-100"
+            class="position-relative bg-light imgs-radius overflow-hidden h-100"
           >
             <img
               src="images/image 12.png"
               alt="Party"
               class="img-fluid h-100 object-fit-cove w-100"
             />
-            <h4
-              class="position-absolute top-50 start-50 translate-middle fw-bold"
-            >
+            <h4 class="position-absolute translate-middle fw-bold text-imgs">
               Party
             </h4>
           </div>
@@ -210,16 +262,14 @@
 
         <div class="col-6 col-lg-3">
           <div
-            class="position-relative bg-light rounded-3 overflow-hidden h-100"
+            class="position-relative bg-light imgs-radius overflow-hidden h-100"
           >
             <img
               src="images/image 14.png"
               alt="Gym"
               class="img-fluid h-100 object-fit-cover w-100"
             />
-            <h4
-              class="position-absolute top-50 start-50 translate-middle fw-bold"
-            >
+            <h4 class="position-absolute translate-middle fw-bold text-imgs">
               Gym
             </h4>
           </div>
@@ -233,8 +283,8 @@
     >
       <h1>OUR HAPPY CUSTOMERS</h1>
       <div class="arrows">
-        <i class="fa-solid fa-arrow-left fw-bold icon p-1 fa"  ></i>
-        <i class="fa-solid fa-arrow-right icon p-1 "></i>
+        <i class="fa-solid fa-arrow-left fw-bold icon p-1 fa"></i>
+        <i class="fa-solid fa-arrow-right icon p-1"></i>
       </div>
     </div>
     <div class="mainSlider">
@@ -389,7 +439,7 @@
     <footer class="bg-light position-relative pt-5">
       <div class="container border-bottom">
         <div
-          class="subscribe bg-dark p-lg-4 p-2 rounded-3 d-lg-flex d-none align-items-center position-absolute gap-3"
+          class="subscribe bg-dark p-lg-4 p-2 rounded-3 d-lg-flex d-none align-items-center position-absolute gap-3 justify-content-between px-2"
         >
           <p class="text-white fw-bolder fs-1 text-sm-center text-lg-left">
             STAY UPTO DATE ABOUT<br />
@@ -419,27 +469,31 @@
               wear. From women to men.
             </p>
             <div class="social-icons">
-              <a href=""><i class="fa-brands fa-twitter text-dark icon link-hover"></i></a>
+              <a href=""
+                ><i class="fa-brands fa-twitter text-dark icon link-hover"></i
+              ></a>
               <a href=""
                 ><i class="fa-brands fa-facebook text-dark icon link-hover"></i
               ></a>
               <a href=""
                 ><i class="fa-brands fa-instagram text-dark icon link-hover"></i
               ></a>
-              <a href=""><i class="fa-brands fa-github text-dark icon link-hover"></i></a>
+              <a href=""
+                ><i class="fa-brands fa-github text-dark icon link-hover"></i
+              ></a>
             </div>
           </div>
           <div class="col-6 col-md-4 col-lg-2">
             <h1 class="fs-4">Company</h1>
             <ul class="list-unstyled lh-lg">
               <li class="link-hover">
-                <a href="" class="text-decoration-none text-secondary ">About</a>
+                <a href="" class="text-decoration-none text-secondary">About</a>
               </li>
               <li class="link-hover">
                 <a href="" class="text-decoration-none text-secondary"
                   >Features</a
                 >
-              </li >
+              </li>
               <li class="link-hover">
                 <a href="" class="text-decoration-none text-secondary">About</a>
               </li>
@@ -488,7 +542,7 @@
                   >Manage Deliveries</a
                 >
               </li>
-              <li class="link-hover" >
+              <li class="link-hover">
                 <a href="" class="text-decoration-none text-secondary"
                   >Orders</a
                 >
@@ -531,11 +585,11 @@
       <div class="container d-flex justify-content-between p-4 text-nowrap">
         <span class="fw-light fs-6">© 2000-2021, All rights reserved</span>
         <div class="images">
-          <img src="images/visa.png" alt=""  class="link-hover"> 
-          <img src="images/Mastercard.png" alt=""  class="link-hover">
-          <img src="images/pay.png" alt="" class="link-hover">
-          <img src="images/pay.png" alt="" class="link-hover">
-          <img src="images/google.png" alt="" class="link-hover">
+          <img src="images/visa.png" alt="" class="link-hover" />
+          <img src="images/Mastercard.png" alt="" class="link-hover" />
+          <img src="images/pay.png" alt="" class="link-hover" />
+          <img src="images/pay.png" alt="" class="link-hover" />
+          <img src="images/google.png" alt="" class="link-hover" />
         </div>
       </div>
     </footer>
@@ -552,4 +606,5 @@
   <script src="js/topSelling.js"></script>
   <script src="js/categoryBars.js"></script>
   <script src="js/slick.min.js"></script>
+  <script src="js/counter.js"></script>
 </html>

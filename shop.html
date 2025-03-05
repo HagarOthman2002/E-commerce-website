@@ -20,48 +20,98 @@
   </head>
   <body>
     <header class="position-relative">
-      <!-- Top Signup Banner -->
       <h6 class="text-white bg-dark p-3 text-center">
         Sign up and get 20% off your first order.
         <a href="#" class="text-white fw-light icon">Sign Up Now</a>
       </h6>
-    
-      <!-- Main Navbar -->
-      <div class="d-flex align-items-center justify-content-between p-3 border-bottom pb-4 px-4">
-        <h1 class="logo fw-bolder fs-4">SHOP.CO</h1>
-    
-        <!-- Navigation Menu -->
+
+      <div
+        class="d-flex align-items-center justify-content-between p-3 border-bottom pb-4 px-4"
+      >
+        <!-- <h1 class="logo fw-bolder fs-4">SHOP.CO</h1> -->
+         <a href="main.html"><img src="images\SHOP.CO.png" alt=""></a>
+
         <ul class="nav gap-2 d-flex flex-nowrap text-nowrap">
-          <!-- Shop Dropdown (Static) -->
-          <li class="nav-item position-relative link-hover">
-            <a href="#" class="nav-link text-dark p-0 p-sm-2 ">Shop <i class="fa-solid fa-angle-down"></i></a>
+          <li class="nav-item position-relative ">
+            <a href="#" class="nav-link text-dark p-0 p-sm-2 link-hover d-block"
+              >Shop <i class="fa-solid fa-angle-down"></i
+            ></a>
             <ul class="dropdown-menu bg-white shadow-sm rounded">
-              <li><a href="#" class="dropdown-item text-dark px-3 py-2 link-hover">Men's Clothing</a></li>
-              <li><a href="#" class="dropdown-item text-dark px-3 py-2 link-hover">Women's Clothing</a></li>
-              <li><a href="#" class="dropdown-item text-dark px-3 py-2 link-hover">Accessories</a></li>
-              <li><a href="#" class="dropdown-item text-dark px-3 py-2 link-hover">Shoes</a></li>
-              <li><a href="#" class="dropdown-item text-dark px-3 py-2 link-hover">Electronics</a></li>
+              <li>
+                <a href="#" class="dropdown-item text-dark px-3 py-2 link-hover"
+                  >Men's Clothing</a
+                >
+              </li>
+              <li>
+                <a href="#" class="dropdown-item text-dark px-3 py-2 link-hover"
+                  >Women's Clothing</a
+                >
+              </li>
+              <li>
+                <a href="#" class="dropdown-item text-dark px-3 py-2 link-hover"
+                  >Accessories</a
+                >
+              </li>
+              <li>
+                <a href="#" class="dropdown-item text-dark px-3 py-2 link-hover"
+                  >Shoes</a
+                >
+              </li>
+              <li>
+                <a href="#" class="dropdown-item text-dark px-3 py-2 link-hover"
+                  >Electronics</a
+                >
+              </li>
             </ul>
           </li>
-          <li class="nav-item link-hover"><a href="#" class="nav-link p-0 p-sm-2 text-dark">On Sale</a></li>
-          <li class="nav-item link-hover"><a href="#" class="nav-link p-0 p-sm-2 text-dark">New Arrivals</a></li>
-          <li class="nav-item link-hover"><a href="#" class="nav-link p-0 p-sm-2 text-dark">Brands</a></li>
+          <li class="nav-item link-hover">
+            <a href="#" class="nav-link p-0 p-sm-2 text-dark">On Sale</a>
+          </li>
+          <li class="nav-item link-hover">
+            <a href="#" class="nav-link p-0 p-sm-2 text-dark">New Arrivals</a>
+          </li>
+          <li class="nav-item link-hover">
+            <a href="#" class="nav-link p-0 p-sm-2 text-dark">Brands</a>
+          </li>
         </ul>
-    
+
         <!-- Search Bar -->
-        <input type="text" class="form-control rounded-pill border-0 shadow-sm w-25 d-none d-lg-flex align-items-center"
-          name="Search" placeholder="Search for products..." />
-    
+        <input
+          type="text"
+          class="form-control rounded-pill border-0 shadow-sm w-25 d-none d-lg-flex align-items-center"
+          name="Search"
+          placeholder="Search for products..."
+        />
+
         <!-- Login Button -->
-        <a href="index.html" class="btn rounded-pill bg-dark text-white px-sm-3 px-lg-5 py-sm-2" id="loginButton">Login</a>
-    
+        <a
+          href="index.html"
+          class="btn rounded-pill bg-dark text-white px-sm-3 px-lg-5 py-sm-2"
+          id="loginButton"
+          >Login</a
+        >
+
         <!-- Icons (Cart & User) -->
         <div class="icons d-flex gap-1 d-none d-lg-flex">
           <ul class="list-unstyled d-flex m-0">
-            <li class="link-hover"><a href="#" class="text-dark"><i class="fa-solid fa-cart-shopping fs-5 px-2 icon" id="cartIcon"></i></a></li>
-            <li class="position-relative user-dropdown link-hover">
-              <a href="#" class="text-dark"><i class="fa-solid fa-circle-user fs-5 px-2 icon" id="userIcon"></i></a>
-              <div class="user-menu position-absolute top-100 end-0 bg-white shadow p-3 rounded d-none">
+            <li class="">
+              <a href="#" class="text-dark link-hover d-block "
+                ><i
+                  class="fa-solid fa-cart-shopping fs-5 px-2 icon"
+                  id="cartIcon"
+                ></i
+              ></a>
+            </li>
+            <li class="position-relative user-dropdown ">
+              <a href="#" class="text-dark link-hover d-block"
+                ><i
+                  class="fa-solid fa-circle-user fs-5 px-2 icon"
+                  id="userIcon"
+                ></i
+              ></a>
+              <div
+                class="user-menu position-absolute top-100 end-0 bg-white shadow p-3 rounded d-none"
+              >
                 <a href="login.html" class="btn btn-danger w-100">Log Out</a>
               </div>
             </li>

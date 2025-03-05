@@ -20,48 +20,98 @@
   </head>
   <body>
     <header class="position-relative">
-      <!-- Top Signup Banner -->
       <h6 class="text-white bg-dark p-3 text-center">
         Sign up and get 20% off your first order.
         <a href="#" class="text-white fw-light icon">Sign Up Now</a>
       </h6>
-    
-      <!-- Main Navbar -->
-      <div class="d-flex align-items-center justify-content-between p-3 border-bottom pb-4 px-4">
-        <h1 class="logo fw-bolder fs-4">SHOP.CO</h1>
-    
-        <!-- Navigation Menu -->
+
+      <div
+        class="d-flex align-items-center justify-content-between p-3 border-bottom pb-4 px-4"
+      >
+        <!-- <h1 class="logo fw-bolder fs-4">SHOP.CO</h1> -->
+         <a href="main.html"><img src="images\SHOP.CO.png" alt=""></a>
+
         <ul class="nav gap-2 d-flex flex-nowrap text-nowrap">
-          <!-- Shop Dropdown (Static) -->
-          <li class="nav-item position-relative link-hover">
-            <a href="#" class="nav-link text-dark p-0 p-sm-2 ">Shop <i class="fa-solid fa-angle-down"></i></a>
+          <li class="nav-item position-relative ">
+            <a href="#" class="nav-link text-dark p-0 p-sm-2 link-hover d-block"
+              >Shop <i class="fa-solid fa-angle-down"></i
+            ></a>
             <ul class="dropdown-menu bg-white shadow-sm rounded">
-              <li><a href="#" class="dropdown-item text-dark px-3 py-2 link-hover">Men's Clothing</a></li>
-              <li><a href="#" class="dropdown-item text-dark px-3 py-2 link-hover">Women's Clothing</a></li>
-              <li><a href="#" class="dropdown-item text-dark px-3 py-2 link-hover">Accessories</a></li>
-              <li><a href="#" class="dropdown-item text-dark px-3 py-2 link-hover">Shoes</a></li>
-              <li><a href="#" class="dropdown-item text-dark px-3 py-2 link-hover">Electronics</a></li>
+              <li>
+                <a href="#" class="dropdown-item text-dark px-3 py-2 link-hover"
+                  >Men's Clothing</a
+                >
+              </li>
+              <li>
+                <a href="#" class="dropdown-item text-dark px-3 py-2 link-hover"
+                  >Women's Clothing</a
+                >
+              </li>
+              <li>
+                <a href="#" class="dropdown-item text-dark px-3 py-2 link-hover"
+                  >Accessories</a
+                >
+              </li>
+              <li>
+                <a href="#" class="dropdown-item text-dark px-3 py-2 link-hover"
+                  >Shoes</a
+                >
+              </li>
+              <li>
+                <a href="#" class="dropdown-item text-dark px-3 py-2 link-hover"
+                  >Electronics</a
+                >
+              </li>
             </ul>
           </li>
-          <li class="nav-item link-hover"><a href="#" class="nav-link p-0 p-sm-2 text-dark">On Sale</a></li>
-          <li class="nav-item link-hover"><a href="#" class="nav-link p-0 p-sm-2 text-dark">New Arrivals</a></li>
-          <li class="nav-item link-hover"><a href="#" class="nav-link p-0 p-sm-2 text-dark">Brands</a></li>
+          <li class="nav-item link-hover">
+            <a href="#" class="nav-link p-0 p-sm-2 text-dark">On Sale</a>
+          </li>
+          <li class="nav-item link-hover">
+            <a href="#" class="nav-link p-0 p-sm-2 text-dark">New Arrivals</a>
+          </li>
+          <li class="nav-item link-hover">
+            <a href="#" class="nav-link p-0 p-sm-2 text-dark">Brands</a>
+          </li>
         </ul>
-    
+
         <!-- Search Bar -->
-        <input type="text" class="form-control rounded-pill border-0 shadow-sm w-25 d-none d-lg-flex align-items-center"
-          name="Search" placeholder="Search for products..." />
-    
+        <input
+          type="text"
+          class="form-control rounded-pill border-0 shadow-sm w-25 d-none d-lg-flex align-items-center"
+          name="Search"
+          placeholder="Search for products..."
+        />
+
         <!-- Login Button -->
-        <a href="index.html" class="btn rounded-pill bg-dark text-white px-sm-3 px-lg-5 py-sm-2" id="loginButton">Login</a>
-    
+        <a
+          href="index.html"
+          class="btn rounded-pill bg-dark text-white px-sm-3 px-lg-5 py-sm-2"
+          id="loginButton"
+          >Login</a
+        >
+
         <!-- Icons (Cart & User) -->
         <div class="icons d-flex gap-1 d-none d-lg-flex">
           <ul class="list-unstyled d-flex m-0">
-            <li class="link-hover"><a href="#" class="text-dark"><i class="fa-solid fa-cart-shopping fs-5 px-2 icon" id="cartIcon"></i></a></li>
-            <li class="position-relative user-dropdown link-hover">
-              <a href="#" class="text-dark"><i class="fa-solid fa-circle-user fs-5 px-2 icon" id="userIcon"></i></a>
-              <div class="user-menu position-absolute top-100 end-0 bg-white shadow p-3 rounded d-none">
+            <li class="">
+              <a href="#" class="text-dark link-hover d-block "
+                ><i
+                  class="fa-solid fa-cart-shopping fs-5 px-2 icon"
+                  id="cartIcon"
+                ></i
+              ></a>
+            </li>
+            <li class="position-relative user-dropdown ">
+              <a href="#" class="text-dark link-hover d-block"
+                ><i
+                  class="fa-solid fa-circle-user fs-5 px-2 icon"
+                  id="userIcon"
+                ></i
+              ></a>
+              <div
+                class="user-menu position-absolute top-100 end-0 bg-white shadow p-3 rounded d-none"
+              >
                 <a href="login.html" class="btn btn-danger w-100">Log Out</a>
               </div>
             </li>
@@ -152,7 +202,9 @@
               class="btn rounded-pill bg-light text-secondary w-100 py-2 gray-btn"
               >Medium</a
             >
-            <a href="" class="btn rounded-pill bg-dark text-white w-100 py-2 gray-btn"
+            <a
+              href=""
+              class="btn rounded-pill bg-dark text-white w-100 py-2 gray-btn"
               >Large</a
             >
             <a
@@ -170,7 +222,9 @@
               class="btn rounded-pill bg-light text-secondary w-100 py-2 gray-btn"
               >- 1 +</a
             >
-            <a href="" class="btn rounded-pill bg-dark text-white w-100 py-2 gray-btn"
+            <a
+              href=""
+              class="btn rounded-pill bg-dark text-white w-100 py-2 gray-btn"
               >Add to Cart</a
             >
           </div>
@@ -182,7 +236,7 @@
       class="details container d-flex justify-content-between border-bottom pt-4 pb-2 text-nowrap my-2"
     >
       <p class="">Product Details</p>
-      <p class="position-relative fw-bold review-tab ">Rating & Reviews</p>
+      <p class="position-relative fw-bold review-tab">Rating & Reviews</p>
       <p class="">FAQs</p>
     </div>
 
@@ -200,7 +254,7 @@
             href=""
             class="btn rounded-pill bg-light text-secondary w-100 py-2 text-nowrap gray-btn"
           >
-            Latest <i class="fa-solid fa-chevron-down "></i>
+            Latest <i class="fa-solid fa-chevron-down"></i>
           </a>
           <a
             href=""
@@ -261,27 +315,31 @@
               wear. From women to men.
             </p>
             <div class="social-icons">
-              <a href=""><i class="fa-brands fa-twitter text-dark icon link-hover"></i></a>
+              <a href=""
+                ><i class="fa-brands fa-twitter text-dark icon link-hover"></i
+              ></a>
               <a href=""
                 ><i class="fa-brands fa-facebook text-dark icon link-hover"></i
               ></a>
               <a href=""
                 ><i class="fa-brands fa-instagram text-dark icon link-hover"></i
               ></a>
-              <a href=""><i class="fa-brands fa-github text-dark icon link-hover"></i></a>
+              <a href=""
+                ><i class="fa-brands fa-github text-dark icon link-hover"></i
+              ></a>
             </div>
           </div>
           <div class="col-6 col-md-4 col-lg-2">
             <h1 class="fs-4">Company</h1>
             <ul class="list-unstyled lh-lg">
               <li class="link-hover">
-                <a href="" class="text-decoration-none text-secondary ">About</a>
+                <a href="" class="text-decoration-none text-secondary">About</a>
               </li>
               <li class="link-hover">
                 <a href="" class="text-decoration-none text-secondary"
                   >Features</a
                 >
-              </li >
+              </li>
               <li class="link-hover">
                 <a href="" class="text-decoration-none text-secondary">About</a>
               </li>
@@ -330,7 +388,7 @@
                   >Manage Deliveries</a
                 >
               </li>
-              <li class="link-hover" >
+              <li class="link-hover">
                 <a href="" class="text-decoration-none text-secondary"
                   >Orders</a
                 >
@@ -373,11 +431,11 @@
       <div class="container d-flex justify-content-between p-4 text-nowrap">
         <span class="fw-light fs-6">© 2000-2021, All rights reserved</span>
         <div class="images">
-          <img src="images/visa.png" alt=""  class="link-hover"> 
-          <img src="images/Mastercard.png" alt=""  class="link-hover">
-          <img src="images/pay.png" alt="" class="link-hover">
-          <img src="images/pay.png" alt="" class="link-hover">
-          <img src="images/google.png" alt="" class="link-hover">
+          <img src="images/visa.png" alt="" class="link-hover" />
+          <img src="images/Mastercard.png" alt="" class="link-hover" />
+          <img src="images/pay.png" alt="" class="link-hover" />
+          <img src="images/pay.png" alt="" class="link-hover" />
+          <img src="images/google.png" alt="" class="link-hover" />
         </div>
       </div>
     </footer>
@@ -385,7 +443,5 @@
   <script src="js/loginBTN.js"></script>
   <script src="js/productReviews"></script>
   <script src="js/topSelling.js"></script>
-  <script>
-    
-  </script>
+  <script></script>
 </html>
