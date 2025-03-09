@@ -105,6 +105,10 @@ input[type="range"]::-moz-range-thumb {
 .icon:hover {
   color: blue !important;
 }
+.btn-hov:hover {
+  background-color: black !important;
+  color: white !important;
+}
 footer {
   margin-top: 15rem;
 }
@@ -116,3 +120,9 @@ footer {
   color: #000; /* Adjust color */
   transform: translateX(3px);
 }
+.filter {
+  max-height: 150vh; 
+  overflow-y: auto; 
+ 
+}
+

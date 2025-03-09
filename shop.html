@@ -138,57 +138,63 @@
       </div>
     </header>
 
-    <div class="container d-flex align-items-center p-2">
-      <a class="text-decoration-none text-secondary p-1">Home</a>
-      <i class="fa-solid fa-chevron-right p-1"></i>
+    <div class="d-flex justify-content-between">
+      <div class="container d-flex align-items-center p-2 link-hover">
+        <a class="text-decoration-none text-secondary p-1">Home</a>
+        <i class="fa-solid fa-chevron-right p-1"></i>
+      </div>
+      <a href="" class="d-lg-none d-block me-2"
+        ><img src="images/filter.png" alt="" style="width: 20px; height: 20px"
+      /></a>
     </div>
 
-    <div class="page-content d-flex container">
-      <div class="filter container rounded-3 w-25">
+    <div class="page-content d-flex container gap-5">
+      <div class="filter container rounded-3 w-25 d-none d-lg-block">
         <div
           class="d-flex justify-content-between align-items-center border-bottom"
         >
           <h3 class="p-2">Filters</h3>
-          <img
-            src="images/filter.png"
-            alt=""
-            style="width: 20px; height: 20px"
-          />
+          <a href=""
+            ><img
+              src="images/filter.png"
+              alt=""
+              style="width: 20px; height: 20px"
+          /></a>
         </div>
 
         <div class="categories border-bottom p-3">
           <div class="d-flex flex-column gap-2">
             <a
               href=""
-              class="d-flex align-items-center justify-content-between text-decoration-none text-secondary"
+              class="d-flex align-items-center justify-content-between text-decoration-none text-secondary link-hover"
             >
               <p class="mb-0">T-shirts</p>
               <i class="fa-solid fa-chevron-right p-1 text-secondary"></i>
             </a>
             <a
               href=""
-              class="d-flex align-items-center justify-content-between text-decoration-none text-secondary"
+              class="d-flex align-items-center justify-content-between text-decoration-none text-secondary link-hover"
             >
               <p class="mb-0">Shirts</p>
               <i class="fa-solid fa-chevron-right p-1 text-secondary"></i>
             </a>
             <a
               href=""
-              class="d-flex align-items-center justify-content-between text-decoration-none text-secondary"
+              class="d-flex align-items-center justify-content-between text-decoration-none text-secondary link-hover"
             >
               <p class="mb-0">Jeans</p>
               <i class="fa-solid fa-chevron-right p-1 text-secondary"></i>
             </a>
             <a
               href=""
-              class="d-flex align-items-center justify-content-between text-decoration-none text-secondary"
+              class="d-flex align-items-center justify-content-between text-decoration-none text-secondary link-hover"
             >
               <p class="mb-0">Dresses</p>
               <i class="fa-solid fa-chevron-right p-1 text-secondary"></i>
             </a>
             <a
               href=""
-              class="d-flex align-items-center justify-content-between text-decoration-none text-secondary"
+              class="d-flex align-items-center justify-content-between text-decoration-none text-secondary link-hover"
             >
               <p class="mb-0">Jackets</p>
               <i class="fa-solid fa-chevron-right p-1 text-secondary"></i>
@@ -231,9 +237,7 @@
             <i class="fa-solid fa-chevron-up"></i>
           </div>
 
-          <div
-            class="row row-cols-2 row-cols-sm-3 row-cols-md-4 row-cols-lg-5 g-3 p-2"
-          >
+          <div class="row">
             <input
               type="color"
               class="form-control form-control-color circle-color mx-1"
@@ -265,9 +269,7 @@
               title="Choose color"
             />
           </div>
-          <div
-            class="row row-cols-2 row-cols-sm-3 row-cols-md-4 row-cols-lg-5 g-3 p-2"
-          >
+          <div class="row pt-2">
             <input
               type="color"
               class="form-control form-control-color circle-color mx-1"
@@ -308,13 +310,13 @@
           </div>
 
           <div class="select-size row d-flex mt-3">
-            <div class="col-lg-6">
+            <div class="pb-2">
               <div class="row row-cols-2 g-2">
                 <!-- Adjusted spacing -->
                 <div class="d-flex align-items-center justify-content-center">
                   <a
                     href="#"
-                    class="btn w-100 rounded-pill bg-light text-secondary py-2 d-flex align-items-center justify-content-center text-nowrap o"
+                    class="btn w-100 rounded-pill bg-light text-secondary py-2 d-flex align-items-center justify-content-center text-nowrap btn-hov"
                   >
                     XX-Small
                   </a>
@@ -322,7 +324,7 @@
                 <div class="d-flex align-items-center justify-content-center">
                   <a
                     href="#"
-                    class="btn w-100 rounded-pill bg-light text-secondary py-2 d-flex align-items-center justify-content-center text-nowrap"
+                    class="btn w-100 rounded-pill bg-light text-secondary py-2 d-flex align-items-center justify-content-center text-nowrap btn-hov"
                   >
                     X-Small
                   </a>
@@ -330,7 +332,7 @@
                 <div class="d-flex align-items-center justify-content-center">
                   <a
                     href="#"
-                    class="btn w-100 rounded-pill bg-light text-secondary py-2 d-flex align-items-center justify-content-center text-nowrap"
+                    class="btn w-100 rounded-pill bg-light text-secondary py-2 d-flex align-items-center justify-content-center text-nowrap btn-hov"
                   >
                     Small
                   </a>
@@ -338,7 +340,7 @@
                 <div class="d-flex align-items-center justify-content-center">
                   <a
                     href="#"
-                    class="btn w-100 rounded-pill bg-light text-secondary py-2 d-flex align-items-center justify-content-center text-nowrap"
+                    class="btn w-100 rounded-pill bg-light text-secondary py-2 d-flex align-items-center justify-content-center text-nowrap btn-hov"
                   >
                     Medium
                   </a>
@@ -346,7 +348,7 @@
                 <div class="d-flex align-items-center justify-content-center">
                   <a
                     href="#"
-                    class="btn w-100 rounded-pill bg-light text-secondary py-2 d-flex align-items-center justify-content-center text-nowrap"
+                    class="btn w-100 rounded-pill bg-light text-secondary py-2 d-flex align-items-center justify-content-center text-nowrap btn-hov"
                   >
                     Large
                   </a>
@@ -354,7 +356,7 @@
                 <div class="d-flex align-items-center justify-content-center">
                   <a
                     href="#"
-                    class="btn w-100 rounded-pill bg-light text-secondary py-2 d-flex align-items-center justify-content-center text-nowrap"
+                    class="btn w-100 rounded-pill bg-light text-secondary py-2 d-flex align-items-center justify-content-center text-nowrap btn-hov"
                   >
                     X-Large
                   </a>
@@ -362,7 +364,7 @@
                 <div class="d-flex align-items-center justify-content-center">
                   <a
                     href="#"
-                    class="btn w-100 rounded-pill bg-dark text-white fw-bold py-2 d-flex align-items-center justify-content-center text-nowrap"
+                    class="btn w-100 rounded-pill bg-dark text-white fw-bold py-2 d-flex align-items-center justify-content-center text-nowrap btn-hov"
                   >
                     XX-Large
                   </a>
@@ -370,7 +372,7 @@
                 <div class="d-flex align-items-center justify-content-center">
                   <a
                     href="#"
-                    class="btn w-100 rounded-pill bg-light text-secondary py-2 d-flex align-items-center justify-content-center text-nowrap"
+                    class="btn w-100 rounded-pill bg-light text-secondary py-2 d-flex align-items-center justify-content-center text-nowrap btn-hov"
                   >
                     3X-Large
                   </a>
@@ -378,7 +380,7 @@
                 <div class="d-flex align-items-center justify-content-center">
                   <a
                     href="#"
-                    class="btn w-100 rounded-pill bg-light text-secondary py-2 d-flex align-items-center justify-content-center text-nowrap"
+                    class="btn w-100 rounded-pill bg-light text-secondary py-2 d-flex align-items-center justify-content-center text-nowrap btn-hov"
                   >
                     4X-Large
                   </a>
@@ -396,34 +398,36 @@
           <div class="d-flex flex-column gap-2">
             <a
               href=""
-              class="d-flex align-items-center justify-content-between text-decoration-none text-secondary"
+              class="d-flex align-items-center justify-content-between text-decoration-none text-secondary link-hover"
             >
               <span>T-shirts</span>
               <i class="fa-solid fa-chevron-right p-1 text-secondary"></i>
             </a>
             <a
               href=""
-              class="d-flex align-items-center justify-content-between text-decoration-none text-secondary"
+              class="d-flex align-items-center justify-content-between text-decoration-none text-secondary link-hover"
             >
               <span>Shirts</span>
               <i class="fa-solid fa-chevron-right p-1 text-secondary"></i>
             </a>
             <a
               href=""
-              class="d-flex align-items-center justify-content-between text-decoration-none text-secondary"
+              class="d-flex align-items-center justify-content-between text-decoration-none text-secondary link-hover"
             >
               <span>Jeans</span>
               <i class="fa-solid fa-chevron-right p-1 text-secondary"></i>
             </a>
             <a
               href=""
-              class="d-flex align-items-center justify-content-between text-decoration-none text-secondary"
+              class="d-flex align-items-center justify-content-between text-decoration-none text-secondary link-hover"
             >
               <span>Dresses</span>
               <i class="fa-solid fa-chevron-right p-1 text-secondary"></i>
             </a>
           </div>
-          <a href="" class="btn rounded-pill bg-dark text-white w-100 py-2 mt-3"
+          <a
+            href=""
+            class="btn rounded-pill bg-dark text-white w-100 py-2 my-4 btn-hov"
             >Apply Filter</a
           >
         </div>
@@ -433,7 +437,6 @@
         <div class="row g-4 border-bottom pb-2" id="shopContainer"></div>
         <nav aria-label="Page navigation">
           <ul class="pagination justify-content-between align-items-center">
-            <!-- Previous Button -->
             <li class="page-item">
               <a
                 class="page-link d-flex align-items-center px-4 py-2 border rounded-3"
@@ -442,8 +445,6 @@
                 <i class="fa-solid fa-arrow-left me-2"></i> Previous
               </a>
             </li>
-
-            <!-- Page Numbers (Centered) -->
 
             <ul class="pagination mx-auto mt-5">
               <li class="page-item active">
@@ -469,7 +470,6 @@
               </li>
             </ul>
 
-            <!-- Next Button -->
             <li class="page-item">
               <a
                 class="page-link d-flex align-items-center px-4 py-2 border rounded-3"
@@ -629,7 +629,9 @@
           </div>
         </div>
       </div>
-      <div class="container d-flex justify-content-between p-4 text-nowrap">
+      <div
+        class="container d-flex justify-content-between p-4 text-nowrap btn-hov"
+      >
         <span class="fw-light fs-6">© 2000-2021, All rights reserved</span>
         <div class="images">
           <img src="images/visa.png" alt="" class="link-hover" />
