@@ -214,7 +214,7 @@
           <div class="range-input">
             <input
               type="range"
-              class="range-min"
+              class="range-min priceSlider "
               min="0"
               max="10000"
               value="2500"
@@ -222,12 +222,16 @@
             />
             <input
               type="range"
-              class="range-max"
+              class="range-max priceSlider "
               min="0"
               max="10000"
               value="7500"
               step="100"
             />
+          </div>
+          <div class="price-values d-flex justify-content-between mt-2 ">
+            <span id="min-price">$2500</span>
+            <span id="max-price">$7500</span>
           </div>
         </div>
 
@@ -237,69 +241,71 @@
             <i class="fa-solid fa-chevron-up"></i>
           </div>
 
-          <div class="row">
-            <input
-              type="color"
-              class="form-control form-control-color circle-color mx-1"
-              value="#ff0000"
-              title="Choose color"
-            />
-            <input
-              type="color"
-              class="form-control form-control-color circle-color mx-1"
-              value="#00ff00"
-              title="Choose color"
-            />
-            <input
-              type="color"
-              class="form-control form-control-color circle-color mx-1"
-              value="#0000ff"
-              title="Choose color"
-            />
-            <input
-              type="color"
-              class="form-control form-control-color circle-color mx-1"
-              value="#ffff00"
-              title="Choose color"
-            />
-            <input
-              type="color"
-              class="form-control form-control-color circle-color mx-1"
-              value="#ff00ff"
-              title="Choose color"
-            />
-          </div>
-          <div class="row pt-2">
-            <input
-              type="color"
-              class="form-control form-control-color circle-color mx-1"
-              value="#ff0000"
-              title="Choose color"
-            />
-            <input
-              type="color"
-              class="form-control form-control-color circle-color mx-1"
-              value="#00ff00"
-              title="Choose color"
-            />
-            <input
-              type="color"
-              class="form-control form-control-color circle-color mx-1"
-              value="#0000ff"
-              title="Choose color"
-            />
-            <input
-              type="color"
-              class="form-control form-control-color circle-color mx-1"
-              value="#ffff00"
-              title="Choose color"
-            />
-            <input
-              type="color"
-              class="form-control form-control-color circle-color mx-1"
-              value="#ff00ff"
-              title="Choose color"
-            />
+          <div class="colors d-flex flex-column  align-items-center ">
+            <div class="row">
+              <input
+                type="color"
+                class="form-control form-control-color circle-color"
+                value="#ff0000"
+                title="Choose color"
+              />
+              <input
+                type="color"
+                class="form-control form-control-color circle-color "
+                value="#00ff00"
+                title="Choose color"
+              />
+              <input
+                type="color"
+                class="form-control form-control-color circle-color "
+                value="#0000ff"
+                title="Choose color"
+              />
+              <input
+                type="color"
+                class="form-control form-control-color circle-color "
+                value="#ffff00"
+                title="Choose color"
+              />
+              <input
+                type="color"
+                class="form-control form-control-color circle-color "
+                value="#ff00ff"
+                title="Choose color"
+              />
+            </div>
+            <div class="row pt-2">
+              <input
+                type="color"
+                class="form-control form-control-color circle-color "
+                value="#ff0000"
+                title="Choose color"
+              />
+              <input
+                type="color"
+                class="form-control form-control-color circle-color "
+                value="#00ff00"
+                title="Choose color"
+              />
+              <input
+                type="color"
+                class="form-control form-control-color circle-color "
+                value="#0000ff"
+                title="Choose color"
+              />
+              <input
+                type="color"
+                class="form-control form-control-color circle-color "
+                value="#ffff00"
+                title="Choose color"
+              />
+              <input
+                type="color"
+                class="form-control form-control-color circle-color "
+                value="#ff00ff"
+                title="Choose color"
+              />
+            </div>
           </div>
         </div>
 
@@ -436,7 +442,7 @@
       <div class="shop container py-5 mb-5">
         <div class="row g-4 border-bottom pb-2" id="shopContainer"></div>
         <nav aria-label="Page navigation ">
-          <ul class="pagination justify-content-between align-items-center ">
+          <ul class="pagination justify-content-between align-items-center">
             <li class="page-item">
               <a
                 class="page-link d-flex align-items-center px-4 py-2 border rounded-3"
@@ -483,7 +489,7 @@
       </div>
     </div>
 
-    <footer class="bg-light position-relative pt-5 ">
+    <footer class="bg-light position-relative pt-5">
       <div class="container border-bottom">
         <div
           class="subscribe bg-dark p-lg-4 p-2 rounded-3 d-lg-flex d-none align-items-center position-absolute gap-3 justify-content-between px-2"
@@ -629,7 +635,9 @@
           </div>
         </div>
       </div>
-      <div class="container  d-flex flex-column flex-lg-row justify-content-between p-4 text-nowrap">
+      <div
+        class="container d-flex flex-column flex-lg-row justify-content-between p-4 text-nowrap"
+      >
         <span class="fw-light fs-6">© 2000-2021, All rights reserved</span>
         <div class="images">
           <img src="images/visa.png" alt="" class="link-hover" />
@@ -639,11 +647,11 @@
           <img src="images/google.png" alt="" class="link-hover" />
         </div>
       </div>
-    </footer> 
+    </footer>
   </body>
 
   <script src="js/loginBTN.js"></script>
   <script src="js/shop.js"></script>
 
-  <script></script>
+  <script src="priceFilter.js"></script>
 </html>

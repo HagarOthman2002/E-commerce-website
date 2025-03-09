@@ -130,7 +130,7 @@ footer {
   transform: translateX(3px);
 }
 .filter {
-  max-height: 150vh; 
+  max-height: 155vh; 
   overflow-y: auto; 
  
 }
@@ -145,4 +145,11 @@ footer {
   height: 200px;
   object-fit: contain;
   width: 100%;
+}
+input[type="color"] {
+  width: 27px;
+  height: 27px;
+  margin: 1px 10px ;
+   
+  
 }
