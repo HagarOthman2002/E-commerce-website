@@ -9,7 +9,7 @@ $(document).ready(function () {
       data.comments.forEach((comment) => {
         commentsHTML += `
         <div class="box p-4">
-          <div class="card p-4" style="width: 100%; min-height: 200px; border-radius:15px">
+          <div class="card p-4" style="width: 100%; min-height: 200px; border-radius:15px ">
             <div class="likes text-primary">
               <i class="fa-solid fa-thumbs-up"></i> <span>${comment.likes}</span>
             </div>
