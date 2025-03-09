@@ -2,7 +2,7 @@ document.addEventListener("DOMContentLoaded", function () {
   const shopContainer = document.getElementById("shopContainer");
   const paginationLinks = document.querySelectorAll(".pagination .page-link");
   let currentPage = 1;
-  const productsPerPage = 6;
+  const productsPerPage = 9;
   let allProducts = [];
 
   async function fetchProducts() {
@@ -23,7 +23,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     paginatedProducts.forEach((product) => {
       shopContainer.innerHTML += `
-        <div class="col-md-4 d-flex">
+        <div class="col-md-6 col-lg-4 col-12 d-flex">
           <div class="card border-0 shadow-sm h-100">
             <img src="${product.image}" class="card-img-top bg-light" alt="${
         product.title
@@ -37,7 +37,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 )}/5</span>
               </div>
               <p class="card-text fw-bold fs-5">$ ${product.price} </p>
-              <a href="#" class="btn btn-dark mt-auto">View Product</a>
+              <a href="#" class="btn btn-light text-secondary mt-auto btn-hov">View Product</a>
             </div>
           </div>
         </div>
@@ -81,20 +81,4 @@ function generateStars(rating) {
 
 
 
-document.addEventListener("DOMContentLoaded", function () {
-  const style = document.createElement("style");
-  style.innerHTML = `
-    .card {
-      height: 100%;
-      width:300px;
-    }
 
-
-    .card img {
-      height: 200px;
-      object-fit: contain;
-      width: 100%;
-    }
-  `;
-  document.head.appendChild(style);
-});
