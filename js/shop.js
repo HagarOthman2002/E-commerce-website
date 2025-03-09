@@ -5,7 +5,6 @@ document.addEventListener("DOMContentLoaded", function () {
   const productsPerPage = 6;
   let allProducts = [];
 
-  // Fetch all products once
   async function fetchProducts() {
     try {
       const response = await fetch("https://fakestoreapi.com/products");
@@ -16,23 +15,26 @@ document.addEventListener("DOMContentLoaded", function () {
     }
   }
 
-  // Function to render products for the current page
   function renderProducts(page) {
-    shopContainer.innerHTML = ""; // Clear previous products
+    shopContainer.innerHTML = "";
     const startIndex = (page - 1) * productsPerPage;
     const endIndex = startIndex + productsPerPage;
     const paginatedProducts = allProducts.slice(startIndex, endIndex);
 
-    paginatedProducts.forEach(product => {
+    paginatedProducts.forEach((product) => {
       shopContainer.innerHTML += `
         <div class="col-md-4 d-flex">
           <div class="card border-0 shadow-sm h-100">
-            <img src="${product.image}" class="card-img-top" alt="${product.title}" />
+            <img src="${product.image}" class="card-img-top" alt="${
+        product.title
+      }" />
             <div class="card-body d-flex flex-column">
               <h5 class="card-title">${product.title}</h5>
               <div class="score text-warning">
                 ${generateStars(product.rating.rate)}
-                <span class="text-dark">${product.rating.rate.toFixed(1)}/5</span>
+                <span class="text-dark">${product.rating.rate.toFixed(
+                  1
+                )}/5</span>
               </div>
               <p class="card-text fw-bold fs-5">${product.price} $</p>
               <a href="#" class="btn btn-dark mt-auto">View Product</a>
@@ -43,13 +45,15 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   }
 
-  // Handle Pagination Clicks
-  paginationLinks.forEach(link => {
+  paginationLinks.forEach((link) => {
     link.addEventListener("click", function (event) {
       event.preventDefault();
       const pageText = this.textContent.trim();
 
-      if (pageText === "Next" && currentPage < Math.ceil(allProducts.length / productsPerPage)) {
+      if (
+        pageText === "Next" &&
+        currentPage < Math.ceil(allProducts.length / productsPerPage)
+      ) {
         currentPage++;
       } else if (pageText === "Previous" && currentPage > 1) {
         currentPage--;
@@ -61,21 +65,15 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   });
 
-  // Initial Fetch
   fetchProducts();
 });
 
-// Function to generate stars
 function generateStars(rating) {
   let fullStars = Math.floor(rating);
   let halfStar = rating % 1 >= 0.5 ? 1 : 0;
   let emptyStars = 5 - fullStars - halfStar;
 
-  return (
-    "★".repeat(fullStars) +
-    "½".repeat(halfStar) +
-    "☆".repeat(emptyStars)
-  )
+  return ("★".repeat(fullStars) + "½".repeat(halfStar) + "☆".repeat(emptyStars))
     .replace(/★/g, '<i class="fa-solid fa-star"></i>')
     .replace(/½/g, '<i class="fa-solid fa-star-half-stroke"></i>')
     .replace(/☆/g, '<i class="fa-regular fa-star"></i>');
