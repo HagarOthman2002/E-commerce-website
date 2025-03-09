@@ -25,7 +25,7 @@ document.addEventListener("DOMContentLoaded", function () {
       shopContainer.innerHTML += `
         <div class="col-md-4 d-flex">
           <div class="card border-0 shadow-sm h-100">
-            <img src="${product.image}" class="card-img-top" alt="${
+            <img src="${product.image}" class="card-img-top bg-light" alt="${
         product.title
       }" />
             <div class="card-body d-flex flex-column">
@@ -36,7 +36,7 @@ document.addEventListener("DOMContentLoaded", function () {
                   1
                 )}/5</span>
               </div>
-              <p class="card-text fw-bold fs-5">${product.price} $</p>
+              <p class="card-text fw-bold fs-5">$ ${product.price} </p>
               <a href="#" class="btn btn-dark mt-auto">View Product</a>
             </div>
           </div>
@@ -78,3 +78,23 @@ function generateStars(rating) {
     .replace(/½/g, '<i class="fa-solid fa-star-half-stroke"></i>')
     .replace(/☆/g, '<i class="fa-regular fa-star"></i>');
 }
+
+
+
+document.addEventListener("DOMContentLoaded", function () {
+  const style = document.createElement("style");
+  style.innerHTML = `
+    .card {
+      height: 100%;
+      width:300px;
+    }
+
+
+    .card img {
+      height: 200px;
+      object-fit: contain;
+      width: 100%;
+    }
+  `;
+  document.head.appendChild(style);
+});
