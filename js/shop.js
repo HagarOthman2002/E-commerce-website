@@ -1,15 +1,16 @@
 document.addEventListener("DOMContentLoaded", function () {
   const shopContainer = document.getElementById("shopContainer");
-  const paginationContainer = document.querySelector(".pagination"); // Select pagination
+  const paginationContainer = document.querySelector(".pagination");
   const paginationLinks = document.querySelectorAll(".pagination .page-link");
   let currentPage = 1;
-  let productsPerPage = window.innerWidth < 768 ? 100 : 9; // Show all on small screens
+  let productsPerPage = window.innerWidth < 768 ? 100 : 9;
   let allProducts = [];
 
   async function fetchProducts() {
     try {
-      const response = await fetch("https://fakestoreapi.com/products");
-      allProducts = await response.json();
+      const response = await fetch("https://dummyjson.com/products");
+      const data = await response.json();
+      allProducts = data.products; // Extract products array
       renderProducts(currentPage);
       togglePagination();
     } catch (error) {
@@ -27,12 +28,12 @@ document.addEventListener("DOMContentLoaded", function () {
       shopContainer.innerHTML += `
         <div class="col-md-6 col-lg-4 col-12 d-flex justify-content-center">
           <div class="card border-0 shadow-sm h-100">
-            <img src="${product.image}" class="card-img-top bg-light" alt="${product.title}" />
+            <img src="${product.thumbnail}" class="card-img-top bg-light" alt="${product.title}" />
             <div class="card-body d-flex flex-column">
               <h5 class="card-title">${product.title}</h5>
               <div class="score text-warning">
-                ${generateStars(product.rating.rate)}
-                <span class="text-dark">${product.rating.rate.toFixed(1)}/5</span>
+                ${generateStars(product.rating)}
+                <span class="text-dark">${product.rating.toFixed(1)}/5</span>
               </div>
               <p class="card-text fw-bold fs-5">$ ${product.price} </p>
               <a href="#" class="btn btn-light text-secondary mt-auto btn-hov">View Product</a>
@@ -44,11 +45,7 @@ document.addEventListener("DOMContentLoaded", function () {
   }
 
   function togglePagination() {
-    if (window.innerWidth < 768) {
-      paginationContainer.style.display = "none"; // Hide pagination on small screens
-    } else {
-      paginationContainer.style.display = "flex"; // Show pagination on large screens
-    }
+    paginationContainer.style.display = window.innerWidth < 768 ? "none" : "flex";
   }
 
   paginationLinks.forEach((link) => {
@@ -56,10 +53,7 @@ document.addEventListener("DOMContentLoaded", function () {
       event.preventDefault();
       const pageText = this.textContent.trim();
 
-      if (
-        pageText === "Next" &&
-        currentPage < Math.ceil(allProducts.length / productsPerPage)
-      ) {
+      if (pageText === "Next" && currentPage < Math.ceil(allProducts.length / productsPerPage)) {
         currentPage++;
       } else if (pageText === "Previous" && currentPage > 1) {
         currentPage--;
@@ -72,7 +66,7 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 
   window.addEventListener("resize", function () {
-    productsPerPage = window.innerWidth < 768 ? 100 : 9; // Recalculate per page count
+    productsPerPage = window.innerWidth < 768 ? 100 : 9;
     renderProducts(1);
     togglePagination();
   });
