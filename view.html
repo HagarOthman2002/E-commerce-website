@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="css/slick.css" />
     <link rel="stylesheet" href="css/slick-theme.css" />
     <link rel="stylesheet" href="css/main.css" />
-  
+
     <link rel="stylesheet" href="css/all.min.css" />
     <link rel="stylesheet" href="css/view.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -19,7 +19,7 @@
     />
   </head>
   <body>
-     <header class="position-relative">
+    <header class="position-relative">
       <h6 class="text-white bg-dark p-3 text-center">
         Sign up and get 20% off your first order.
         <a href="#" class="text-white fw-light icon">Sign Up Now</a>
@@ -136,9 +136,9 @@
           </ul>
         </div>
       </div>
-    </header> 
+    </header>
 
-     <div class="container p-3 mb-2">
+    <div class="container p-3 mb-2">
       <a href="" class="text-decoration-none text-secondary"
         >Home <i class="fa-solid fa-chevron-right p-1"></i
       ></a>
@@ -151,114 +151,22 @@
       <a href="" class="text-decoration-none text-secondary"
         >Men <i class="fa-solid fa-chevron-right p-1"></i
       ></a>
-    </div> 
+    </div>
 
-    <div class="product container d-flex flex-column flex-lg-row custom-flex">
-      <div class="images d-flex gap-2">
-        <div class="small-images d-flex flex-column gap-3 mx-auto">
-          <img src="images/image 2.png" alt="" />
-          <img src="images/image 5.png" alt="" />
-          <img src="images/image 6.png" alt="" />
-        </div>
-        <img src="images/image 1.png" alt="" />
-      </div>
+    <div
+      class="product container d-flex flex-column flex-lg-row custom-flex align-items-center"
+      id="productDetails"
+    ></div>
 
-      <div class="discreption p-sm-5  ">
-        <div class="tags py-2">
-          <h1>One Life Graphic T-shirt</h1>
-          <div class="score text-warning">
-            <i class="fa-solid fa-star"></i>
-            <i class="fa-solid fa-star"></i>
-            <i class="fa-solid fa-star"></i>
-            <i class="fa-solid fa-star"></i>
-            <i class="fa-regular fa-star"></i>
-            <span class="text-dark">4.5/5</span>
-          </div>
-          <h6 class="mt-3 fw-bold">$120</h6>
-          <p class="text-secondary border-bottom py-3">
-            This graphic t-shirt which is perfect for any occasion. Crafted from
-            a soft and breathable fabric, it offers superior comfort and style.
-          </p>
-        </div>
-
-        <div class="colors border-bottom py-2">
-          <h6>Select Colors</h6>
-          <div
-            class="row row-cols-2 row-cols-sm-3 row-cols-md-4 row-cols-lg-5 g-3 p-3"
-          >
-            <input
-              type="color"
-              class=" circle-color m-1"
-              value="#4F4631"
-              title="Choose color"
-            />
-            <input
-              type="color"
-              class=" circle-color m-1"
-              value="#314F4A"
-              title="Choose color"
-            />
-            <input
-              type="color"
-              class=" circle-color m-1"
-              value="#31344F"
-              title="Choose color"
-            />
-          </div>
-        </div>
-
-        <div class="size border-bottom py-2">
-          <h6>Choose Size</h6>
-          <div class="sizes d-flex">
-            <a
-              href=""
-              class="btn rounded-pill bg-light text-secondary w-100 py-2 gray-btn"
-              >Small</a
-            >
-            <a
-              href=""
-              class="btn rounded-pill bg-light text-secondary w-100 py-2 gray-btn"
-              >Medium</a
-            >
-            <a
-              href=""
-              class="btn rounded-pill bg-dark text-white w-100 py-2 gray-btn"
-              >Large</a
-            >
-            <a
-              href=""
-              class="btn rounded-pill bg-light text-secondary w-100 py-2 gray-btn"
-              >X-Large</a
-            >
-          </div>
-        </div>
-
-        <div class="add py-2 mt-3">
-          <div class="sizes d-flex">
-            <a
-              href=""
-              class="btn rounded-pill bg-light text-secondary w-100 py-2 gray-btn"
-              >- 1 +</a
-            >
-            <a
-              href=""
-              class="btn rounded-pill bg-dark text-white w-100 py-2 gray-btn"
-              >Add to Cart</a
-            >
-          </div>
-        </div>
-      </div>
-    </div> 
-
-      <div
+    <div
       class="details container d-flex justify-content-between border-bottom pt-4 pb-2 text-nowrap my-2"
     >
       <p class="">Product Details</p>
       <p class="position-relative fw-bold review-tab">Rating & Reviews</p>
       <p class="">FAQs</p>
-    </div>  
+    </div>
 
-      <div class="all-reviews container">
+    <div class="all-reviews container">
       <div class="d-flex justify-content-between align-items-center mb-4 p-4">
         <h3>All Reviews <span class="fw-light fs-6">(451)</span></h3>
         <div class="left d-flex gap-3">
@@ -293,14 +201,14 @@
           Load More Reviews
         </button>
       </div>
-    </div>  
+    </div>
 
-      <div class="container py-5 more-options">
+    <div class="container py-5 more-options">
       <h1 class="newArrivals text-center p-3 fw-bolder">You might also like</h1>
       <div class="row g-4" id="topSellingContainer"></div>
-    </div>  
+    </div>
 
-     <footer class="bg-light position-relative pt-5">
+    <footer class="bg-light position-relative pt-5">
       <div class="container border-bottom">
         <div
           class="subscribe bg-dark p-lg-4 p-2 rounded-3 d-lg-flex d-none align-items-center position-absolute gap-3 justify-content-between px-2"
@@ -446,9 +354,11 @@
           </div>
         </div>
       </div>
-      <div class="container  d-flex flex-column flex-lg-row justify-content-between p-4 text-nowrap">
+      <div
+        class="container d-flex flex-column flex-lg-row justify-content-between p-4 text-nowrap"
+      >
         <span class="fw-light fs-6">© 2000-2021, All rights reserved</span>
-        <div class="images">
+        <div class="image">
           <img src="images/visa.png" alt="" class="link-hover" />
           <img src="images/Mastercard.png" alt="" class="link-hover" />
           <img src="images/pay.png" alt="" class="link-hover" />
@@ -456,10 +366,12 @@
           <img src="images/google.png" alt="" class="link-hover" />
         </div>
       </div>
-    </footer>  
+    </footer>
   </body>
   <script src="js/loginBTN.js"></script>
   <script src="js/productReviews"></script>
   <script src="js/topSelling.js"></script>
-  <script></script>
+  <script src="js/getProduct.js"></script>
+
+
 </html>

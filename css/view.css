@@ -30,11 +30,11 @@
 }
 
 .link-hover:hover {
-  color: #000; /* Adjust color */
+  color: #000; 
   transform: translateX(3px);
 }
 
-@media (max-width: 576px) { /* Adjust for small screens */
+@media (max-width: 576px) { 
   .more-options {
       margin-bottom: 0 !important;
   }
@@ -42,7 +42,7 @@
 
 
 
-@media (max-width: 576px) { /* Small screens */
+@media (max-width: 576px) { 
 
 
   .small-images img {
@@ -56,8 +56,7 @@
   }
 }
 
-@media (max-width: 992px) { /* Small screens */
-
+@media (max-width: 992px) { 
 
   .small-images img {
       width: 40px; 
@@ -78,11 +77,41 @@
   }
 }
 .circle-color {
-  width: 40px;  /* Adjust size as needed */
+  width: 40px;  
   height: 40px;
-  border-radius: 50%;  /* Makes it a circle */
-  border: none;  /* Removes default border */
+  border-radius: 50%;  
+  border: none; 
   padding: 0;
   cursor: pointer;
 
 }
+
+.images {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  width: 50%;
+  
+}
+
+.small-images {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.small-images img {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: transform 0.3s ease-in-out;
+}
+
+.small-images img:hover {
+  transform: scale(1.1);
+}
+
+
+

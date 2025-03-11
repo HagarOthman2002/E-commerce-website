@@ -36,7 +36,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 <span class="text-dark">${product.rating.toFixed(1)}/5</span>
               </div>
               <p class="card-text fw-bold fs-5">$ ${product.price} </p>
-              <a href="#" class="btn btn-light text-secondary mt-auto btn-hov">View Product</a>
+              <a href="view.html?id=${product.id}" class="btn btn-light text-secondary mt-auto btn-hov">View Product</a>
             </div>
           </div>
         </div>
