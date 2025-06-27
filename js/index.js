@@ -82,7 +82,7 @@ document.addEventListener("DOMContentLoaded", function () {
     .then(data => {
   
       localStorage.setItem("token", JSON.stringify(data.accessToken));
-      window.location.href = 'main.html';
+      window.location.href = 'index.html';
    
     })
     .catch(error => {
@@ -90,21 +90,5 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   }
 
-  // function refreshToken() {
-  //   fetch('https://dummyjson.com/auth/refresh', {
-  //     method: 'POST',
-  //     headers: { 'Content-Type': 'application/json' },
-  //     body: JSON.stringify({
-  //       refreshToken: localStorage.getItem("token"),
-  //       expiresInMins: 30
-  //     }),
-  //     credentials: 'include'
-  //   })
-  //   .then(res => res.json())
-  //   .then(data => {
 
-  //     localStorage.setItem("token", data.accessToken);
-  //   })
-  //   .catch(error => console.error("Token refresh failed:", error));
-  // }
 });

@@ -30,7 +30,7 @@ function logOut() {
   if (token) {
     localStorage.removeItem("token");
     ShowAuthBtn();
-    window.location.href = "main.html";
+    window.location.href = "index.html";
   }
 }
 

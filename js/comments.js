@@ -4,7 +4,6 @@ $(document).ready(function () {
   fetch("https://dummyjson.com/comments")
     .then((response) => response.json())
     .then((data) => {
-      console.log(data.comments);
       let commentsHTML = "";
       data.comments.forEach((comment) => {
         commentsHTML += `
